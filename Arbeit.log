@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.4)  13 APR 2024 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.4)  13 APR 2024 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1358,7 +1358,7 @@ Package hyperref Info: Link coloring ON on input line 31.
 \openout2 = `framework/Header.aux'.
 
  (./framework/Header.tex
-<framework/Logo_HS_Coburg.png, id=19, 322.69395pt x 77.64824pt>
+<framework/Logo_HS_Coburg.png, id=63, 322.69395pt x 77.64824pt>
 File: framework/Logo_HS_Coburg.png Graphic file (type png)
 <use framework/Logo_HS_Coburg.png>
 Package pdftex.def Info: framework/Logo_HS_Coburg.png  used on input line 2.
@@ -1419,175 +1419,79 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 
  (./Sektionen/Einfuehrung.tex [3
 
+] [4]) [5] (./Arbeit.bbl) [6
+
+
 ]
+\openout2 = `framework/Declaration_of_Honor.aux'.
 
-./Sektionen/Einfuehrung.tex:27: LaTeX Error: Invalid UTF-8 byte sequence (√\@@par).
+ (./framework/Declaration_of_Honor.tex
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
+pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<framework/_Declaration_of_Honor.pdf, id=127, 597.53635pt x 845.07529pt>
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf  used on input line 13.
+(pdftex.def)             Requested size: 597.53488pt x 845.07323pt.
 
-./Sektionen/Einfuehrung.tex:27: Argument of \UTFviii@two@octets has an extra }.
-<inserted text> 
-                \par 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
 
-Runaway argument?
-./Sektionen/Einfuehrung.tex:27: Paragraph ended before \UTFviii@two@octets was complete.
-<to be read again> 
-                   \par 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf  used on input line 13.
+(pdftex.def)             Requested size: 597.53488pt x 845.07323pt.
 
-Runaway argument?
-|\@empty \protect 
-./Sektionen/Einfuehrung.tex:27: Paragraph ended before \HyPsd@@ProtectSpacesFi was complete.
-<to be read again> 
-                   \par 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
 
-./Sektionen/Einfuehrung.tex:27: Use of \HyPsd@RemoveMask doesn't match its definition.
-\Hy@tempa ->\par 
-                 | 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-If you say, e.g., `\def\a1{...}', then you must always
-put `1' after `\a', since control sequence names are
-made up of letters only. The macro here has not been
-followed by the required stuff, so I'm ignoring it.
+pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-./Sektionen/Einfuehrung.tex:27: Undefined control sequence.
-\HyPsd@ProtectSpaces ...d@RemoveMask #1\HyPsd@End 
-                                                  #1
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-Runaway argument?
-{
-./Sektionen/Einfuehrung.tex:27: Paragraph ended before \HyPsd@RemoveBraces was complete.
-<to be read again> 
-                   \par 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<framework/_Declaration_of_Honor.pdf, id=130, page=1, 597.53635pt x 845.07529pt>
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf, page 1>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.53488pt x 845.07323pt.
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf, page 1>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.56223pt x 845.11191pt.
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf, page 1>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.56223pt x 845.11191pt.
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf, page 1>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.56223pt x 845.11191pt.
+File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
+<use framework/_Declaration_of_Honor.pdf, page 1>
+Package pdftex.def Info: framework/_Declaration_of_Honor.pdf , page1 used on input line 13.
+(pdftex.def)             Requested size: 597.56223pt x 845.11191pt.
+[7
 
-./Sektionen/Einfuehrung.tex:27: Extra }, or forgotten \endgroup.
-\pdfstringdef ...d@RemoveBraces \expandafter {#1|}
-                                                  \global \let #1\HyPsd@Stri...
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+ <./framework/_Declaration_of_Honor.pdf>])
 
-./Sektionen/Einfuehrung.tex:27: Argument of \HyPsd@CheckCatcodes has an extra }.
-<inserted text> 
-                \par 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+Package glossaries Warning: No \printglossary or \printglossaries found. 
+(Remove \makeglossaries if you don't want any glossaries.) 
+This document will not have a glossary.
 
-Runaway argument?
-\global \let \Hy@tempa \HyPsd@String 
-./Sektionen/Einfuehrung.tex:27: Paragraph ended before \HyPsd@CheckCatcodes was complete.
-<to be read again> 
-                   \par 
-l.27 \section √
-               úberf√ºhrung auf Wearable Dataset
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+(./Arbeit.aux (./framework/Header.aux) (./Sektionen/Einfuehrung.aux) (./framework/Declaration_of_Honor.aux))
+Package rerunfilecheck Info: File `Arbeit.out' has not changed.
+(rerunfilecheck)             Checksum: CDB1C48257434097D456DC09FB6948F2;2664.
+ ) 
+Here is how much of TeX's memory you used:
+ 58970 strings out of 476025
+ 1348253 string characters out of 5790018
+ 1989175 words of memory out of 5000000
+ 78346 multiletter control sequences out of 15000+600000
+ 559064 words of font info for 181 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 122i,17n,125p,2352b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Arbeit.pdf (7 pages, 229287 bytes).
+PDF statistics:
+ 188 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 50838 words of extra memory for PDF output out of 51595 (max. 10000000)
 
-Runaway argument?
-\@empty \HyPsd@End \Hy@tempa \expandafter \HyPsd@Subst \expandafter {\ETC.
-./Sektionen/Einfuehrung.tex:28: Paragraph ended before \HyPsd@RemoveMask was complete.
-<to be read again> 
-                   \par 
-l.28 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-)
-/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex:33: Missing { inserted.
-<to be read again> 
-                   #
-l.33   \include{Sektionen/Einfuehrung}
-                                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex:33: Missing number, treated as zero.
-<to be read again> 
-                   }
-l.33   \include{Sektionen/Einfuehrung}
-                                      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex:33: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.33   \include{Sektionen/Einfuehrung}
-                                      
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex:33: Missing \endcsname inserted.
-<to be read again> 
-                   \space 
-l.33   \include{Sektionen/Einfuehrung}
-                                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex:33: Improper alphabetic constant.
-<to be read again> 
-                   \q__text_recursion_tail 
-l.33   \include{Sektionen/Einfuehrung}
-                                      
-A one-character control sequ

@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einführung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theoretischer Rahmen Stress}{4}{section.2}%
+\contentsline {section}{\numberline {3}Theoretischer Rahmen Stress}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Definition Stress}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Zusammenhang Stress - Mental Health}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Physiologische Marker}{4}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Theoretischer Rahmen Wearables}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Überblick Wearables}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Verbaute Sensoren für obige physiologische Marker}{4}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Bisherige Ansätze Stressvorhersage ML}{5}{section.5}%
+\contentsline {section}{\numberline {6}Überführung auf Wearable Dataset}{5}{section.6}%
+\contentsline {section}{\numberline {7}Diskussion und Implikationen}{5}{section.7}%
+\contentsline {section}{Literaturverzeichnis}{6}{section*.2}%
+\contentsline {section}{Ehrenwörtliche Erklärung}{7}{section*.4}%
