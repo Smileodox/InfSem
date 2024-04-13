@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Arbeit.aux
+A level-1 auxiliary file: framework/Header.aux
+A level-1 auxiliary file: Sektionen/Einfuehrung.aux
+The style file: alphadin.bst
+A level-1 auxiliary file: framework/Declaration_of_Honor.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Verzeichnisse/Literaturverzeichnis.bib
+You've used 6 entries,
+            4793 wiz_defined-function locations,
+            949 strings with 7835 characters,
+and the built_in function-call counts, 5509 in all, are:
+= -- 575
+> -- 150
+< -- 181
++ -- 207
+- -- 60
+* -- 431
+:= -- 925
+add.period$ -- 10
+call.type$ -- 6
+change.case$ -- 38
+chr.to.int$ -- 6
+cite$ -- 6
+duplicate$ -- 123
+empty$ -- 350
+format.name$ -- 102
+if$ -- 1053
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 32
+newline$ -- 50
+num.names$ -- 18
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 50
+quote$ -- 0
+skip$ -- 260
+stack$ -- 0
+substring$ -- 552
+swap$ -- 37
+text.length$ -- 29
+text.prefix$ -- 2
+top$ -- 0
+type$ -- 56
+warning$ -- 0
+while$ -- 43
+width$ -- 9
+write$ -- 96
