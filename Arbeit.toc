@@ -3,14 +3,13 @@
 \contentsline {section}{\numberline {2}Theoretischer Rahmen Stress}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Moderne Interpretation}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Physiologische Marker für Stress}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Definition Stress}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Zusammenhang Stress - Mental Health}{6}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Physiologische Marker}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.3}Zusammenhang Stress - Mental Health}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Physiologische Marker}{6}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Theoretischer Rahmen Wearables}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Überblick Wearables}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Verbaute Sensoren für obige physiologische Marker}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Bisherige Ansätze Stressvorhersage ML}{6}{section.4}%
-\contentsline {section}{\numberline {5}Überführung auf Wearable Dataset}{6}{section.5}%
-\contentsline {section}{\numberline {6}Diskussion und Implikationen}{6}{section.6}%
-\contentsline {section}{Literaturverzeichnis}{7}{section*.2}%
-\contentsline {section}{Ehrenwörtliche Erklärung}{8}{section*.4}%
+\contentsline {section}{\numberline {4}Bisherige Ansätze Stressvorhersage ML}{7}{section.4}%
+\contentsline {section}{\numberline {5}Überführung auf Wearable Dataset}{7}{section.5}%
+\contentsline {section}{\numberline {6}Diskussion und Implikationen}{7}{section.6}%
+\contentsline {section}{Literaturverzeichnis}{8}{section*.2}%
+\contentsline {section}{Ehrenwörtliche Erklärung}{10}{section*.4}%
