@@ -8,6 +8,35 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[All07]{Allen2007}
+\textsc{Allen}, John:
+\newblock Photoplethysmography and its application in clinical physiological measurement.
+\newblock {In: }\emph{Physiological Measurement} 28 (2007), 04, S. R1--39.
+\newblock \url{http://dx.doi.org/10.1088/0967-3334/28/3/R01}. --
+\newblock DOI 10.1088/0967--3334/28/3/R01
+
+\bibitem[App23]{Apple2023}
+Apple:
+\newblock \emph{Your heart rate. What it means, and where on Apple Watch you’ll find it.}
+\newblock \url{https://support.apple.com/en-us/HT204666}, 2023. --
+\newblock Zugriff am 20. April 2024
+
+\bibitem[Boc21]{bocksch2021apple}
+\textsc{Bocksch}, R.:
+\newblock \emph{Apple Watch - mit Abstand Nr. 1}.
+\newblock Digitales Bild.
+\newblock \url{https://de.statista.com/infografik/15047/geschaetzter-weltweiter-smartwatch-absatz/}.
+\newblock \,Version:\,3 2021. --
+\newblock Zugriff am 20. April 2024
+
+\bibitem[Boc23]{bocksch2023nutzung}
+\textsc{Bocksch}, R.:
+\newblock \emph{Nutzung von Wearables in Europa deutlich gestiegen}.
+\newblock Digitales Bild.
+\newblock \url{https://de.statista.com/infografik/31378/nutzung-von-wearables-in-europa/}.
+\newblock \,Version:\,12 2023. --
+\newblock Zugriff am 20. April 2024
+
 \bibitem[Can15]{Cannon1915}
 \textsc{Cannon}, Walter~B.:
 \newblock \emph{Bodily Changes in Pain, Hunger, Fear and Rage: An Account of Recent Researches into the Function of Emotional Excitement}.
@@ -29,6 +58,14 @@
 \newblock DOI 10.1080/10253890701288935. --
 \newblock PMID: 17514579
 
+\bibitem[HRS{\etalchar{+}}18]{s18082619}
+\textsc{Hernando}, David ; \textsc{Roca}, Surya ; \textsc{Sancho}, Jorge ; \textsc{Alesanco}, Álvaro  ; \textsc{Bailón}, Raquel:
+\newblock Validation of the Apple Watch for Heart Rate Variability Measurements during Relax and Mental Stress in Healthy Subjects.
+\newblock {In: }\emph{Sensors} 18 (2018), Nr. 8.
+\newblock \url{http://dx.doi.org/10.3390/s18082619}. --
+\newblock DOI 10.3390/s18082619. --
+\newblock ISSN 1424--8220
+
 \bibitem[KJ23]{Kaiser2023}
 \textsc{Kaiser}, Marianne ; \textsc{Jaillardon}, Laetitia:
 \newblock Pathogenesis of the crosstalk between reproductive function and stress in animals-part 1: Hypothalamo-pituitary-adrenal axis, sympatho-adrenomedullary system and kisspeptin.
@@ -42,6 +79,12 @@
 \newblock \emph{Wearable Devices Market Insights}.
 \newblock International Data Corporation (IDC), 2024. --
 \newblock Accessed: 13.04.2024
+
+\bibitem[MSA{\etalchar{+}}17]{Mozos2017StressDU}
+\textsc{Mozos}, {\'O}scar~M. ; \textsc{Sandulescu}, Virginia ; \textsc{Andrews}, Sally ; \textsc{Ellis}, David ; \textsc{Bellotto}, Nicola ; \textsc{Dobrescu}, Radu  ; \textsc{Ferr{\'a}ndez}, J.~M.:
+\newblock Stress Detection Using Wearable Physiological and Sociometric Sensors.
+\newblock {In: }\emph{International journal of neural systems} 27 2 (2017), 1650041.
+\newblock \url{https://api.semanticscholar.org/CorpusID:2934562}
 
 \bibitem[Sel36]{Selye1936}
 \textsc{Selye}, Hans:

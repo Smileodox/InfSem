@@ -3,13 +3,18 @@
 \contentsline {section}{\numberline {2}Theoretischer Rahmen Stress}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Moderne Interpretation}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Physiologische Marker für Stress}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Zusammenhang Stress - Mental Health}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Physiologische Marker}{6}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Theoretischer Rahmen Wearables}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Überblick Wearables}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Verbaute Sensoren für obige physiologische Marker}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Bisherige Ansätze Stressvorhersage ML}{7}{section.4}%
-\contentsline {section}{\numberline {5}Überführung auf Wearable Dataset}{7}{section.5}%
-\contentsline {section}{\numberline {6}Diskussion und Implikationen}{7}{section.6}%
-\contentsline {section}{Literaturverzeichnis}{8}{section*.2}%
-\contentsline {section}{Ehrenwörtliche Erklärung}{10}{section*.4}%
+\contentsline {section}{\numberline {3}Wearables}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Technologische Grundlagen Wearables}{6}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Photoplethysmographie}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Elektrokardiogramm}{7}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Weiter relevante Sensorik}{7}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Limitationen von Wearables}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Physiologische Marker}{8}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Theoretischer Rahmen Wearables}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Überblick Wearables}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Verbaute Sensoren für obige physiologische Marker}{8}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Bisherige Ansätze Stressvorhersage ML}{9}{section.5}%
+\contentsline {section}{\numberline {6}Überführung auf Wearable Dataset}{9}{section.6}%
+\contentsline {section}{\numberline {7}Diskussion und Implikationen}{9}{section.7}%
+\contentsline {section}{Literaturverzeichnis}{10}{section*.2}%
+\contentsline {section}{Ehrenwörtliche Erklärung}{12}{section*.4}%

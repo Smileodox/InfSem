@@ -92,16 +92,52 @@ Insgesamt deckten sich die Ergebnisse weitgehend mit Erkenntnissen anderer Liter
 zur Erkennung von Stress geschaffen wurde, an dem wir uns in dieser Arbeit noch weitergehend bedienen werden.
 
 
+\section{Wearables}
+
+Wie eingangs bereits erwähnt ist der Markt für Wearables gigantisch und soll im Jahr 2028 eine Auslieferungszahl von sechshundert Millionen Stück erreichen. Insbesondere Smartwatches und 
+Fitnesstracker erfreuen sich in Europa einer steigenden Popularität, wonach laut einer Statista Umfrage in Deutschland im Jahre 2023 bereits fünfunddreisig Prozent ein solches nutzen (Vergleich 2021: neunzehn Prozent). \cite{bocksch2023nutzung}
+
+Insbesondere diese eröffnen breite Möglichkeiten zur Erfassung von Stress, da viele dieser Wearables nicht invasive Biosensorik verbaut haben, und sowieso schon alltäglich getragen werden. Um eingrenzend tiefer auf die technologischen Merkmale eingehen 
+zu können, fokussieren wir uns auf die Apple Watch, welche nach geschätzen Absatzzahlen aus dem Jahr 2020 mit über 33 Millionen Stück eine große Marktdominanz zeigte. \cite{bocksch2021apple}
 
 
 
+\subsection{Technologische Grundlagen Wearables}
+
+Es wird kurz die für die Erfassung von physiologischen Stressmarker wichtigste Sensorik der Apple Watch beleuchtet. Dabei werden speziell auf die \ac{PPG} und das \ac{EKG} eingegangen, da diese genutzt werden um die obig erwähnte wichtige \ac{HRV} zu berechnen.
+
+\subsubsection{Photoplethysmographie}
+\ac{PPG} ist eine kostengünstige Methode um zahlreiche Marker des Herz-Kreislaufes zu erfassen, indem ein Lichtsignal, meist im Infrarot-Beriech, entsendet wird und mittels Photodioden gemessen wird, 
+wie viel dieses Lichts vom mikrovaskulären Blut absorbiert wurde. Da sich das Blutvolumen im Laufe des Herzschlagszyklus ändert, 
+kann bei wiederholten Messung die Herzfrequenz sowie andere daraus resultierende Werte errechnet werden. \cite{Allen2007}. 
+
+Ein solcher Sensor ist in jeder Apple Watch verbaut, welche Stand jetzt auf den Markt kam. Die Apple Watch benutzt Grüne-LEDs, welches mehrer hundert male pro Sekunde leuchten, wobei das reflektierte Licht 
+von Photodioden gemessen wird. Weiterhin besitzt der \ac{PPG} Sensor der Apple Watch einen Hintergrundoperationsmodus, welcher für durchgängige Messungen im Hintergrund mit Infrarot fungiert.
+
+Tatsächlich benutzt jede Apple Watch die \ac{PPG} Messungen zur Ermittlung der \ac{HRV}, sowie zur Erfassung der Herzfrequenz und der Blutsauerstoffsättigung.\cite{Apple2023}
+
+\subsubsection{Elektrokardiogramm}
+
+Das Herz fungiert auf der Basis von rhytmischen An- und Entspannen der Vorhöfe und Herzkammern. Dieser Vorgang wird durch elektrische Potentiale angestossen, welche mit Hilfe eines \ac{EKG}s gemessen werden können.
+
+Seit der Einführung der Apple Watch Series 4 ist ein \ac{EKG} Bestandteil der Sensorausstattung. Dieses erfasst die elektrischen Signale der Herzmuskeln durch spezielle Sensoren an der Rückseite der Uhr und der digitalen Krone, welche der Nutzer mit der nicht dominanten Hand für circa 30 Sekunden berühren muss und so den Stromkreis schließt. 
 
 
+\subsubsection{Weiter relevante Sensorik}
+
+Die Apple Watch verfügt noch über weiter Sensorik, welche zur Klassifizierung von Stress nütliche Daten liefern kann. Ein Mikrofon kann benutz werden um Änderungen an der Stimmlage festzustellen, wohingegen das verbaute 3-Achsen Gyroskop und der Beschleunigungssensor benutz werden können um Körperbewegungen wahrzunehmen. Óscar Martínez Mozos et al. benutzen diese Metriken in Kombination mit \ac{EKG} und \ac{PPG} Daten klinischer Sensoren um mittels des Klassifizierungsalgorithmen \ac{SVM} und dem Metalgortihmus \ac{AdaBoost} binär zwischen nicht-Stress und Stress zu klassifiziern. \cite{Mozos2017StressDU} 
+
+Auch wenn diese Sensorik keine Daten zu den physiologischen Markern ermittelt, auf welche sich in dieser Arbeit fokussiert wird, behalten wird diese für supplementäre Features im Hinterkopf.
 
 
-h
-\subsection{Zusammenhang Stress - Mental Health}
-h
+\subsection{Limitationen von Wearables}
+
+Eine Limitation der Apple Watch könnte die Messgenauigkeit der verbauten Sensorik sein. Hernando et al. validierten in einer Studie die Genauigkeit der aus den RR-Intervalle, welche die Apple Watch mithilfe der \ac{PPG} aufzeichnet, herausgerechneten Herzfrequenz sowie \ac{HRV}. Zwanzig Teilnehmer trugen ein Validierungsgerät und eine Apple Watch 4 während einer 5-minütigen Ruhephase und einer 5-minütigen Phase, in welcher mittels des Stroop Test leichter Stress induziert wurde. 
+
+Die Studie ergab nach Synchronisation der Signale und statistischer Auswertung eine sehhr gute Übereinstimmung jeweils in den rohen RR-Intervallen, als auch in der Herzfrequenz und der \ac{HRV}. Gleichzeitig wurde aber auch festgestellt, dass die Apple Watch vermehrt RR-Intervalle nicht identifizieren konnte, was der Autor auf eine Nichterkennung des \ac{PPG}-Pulses zurückführt, was bei nicht richtigem Sitz beziehungsweise vor allem auch viel Bewegung passieren kann. 
+
+Dies beeinträchtigt die Messergebnis nicht erwähnenswert, gilt aber im Auge behalten zu werden, da verinzelt fehlende RR-Intervalle insbesondere die \ac{HRV}, welche beispielsweise aus der Standardabweichung der Abstände zwischen RR-Intervallen berechnet werden kann, beeinflussen. \cite{s18082619}
+
 \subsection{Physiologische Marker}
 h
 \section{Theoretischer Rahmen Wearables}
