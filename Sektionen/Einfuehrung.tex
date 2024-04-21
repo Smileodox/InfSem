@@ -134,21 +134,80 @@ Auch wenn diese Sensorik keine Daten zu den physiologischen Markern ermittelt, a
 
 Eine Limitation der Apple Watch könnte die Messgenauigkeit der verbauten Sensorik sein. Hernando et al. validierten in einer Studie die Genauigkeit der aus den RR-Intervalle, welche die Apple Watch mithilfe der \ac{PPG} aufzeichnet, herausgerechneten Herzfrequenz sowie \ac{HRV}. Zwanzig Teilnehmer trugen ein Validierungsgerät und eine Apple Watch 4 während einer 5-minütigen Ruhephase und einer 5-minütigen Phase, in welcher mittels des Stroop Test leichter Stress induziert wurde. 
 
-Die Studie ergab nach Synchronisation der Signale und statistischer Auswertung eine sehhr gute Übereinstimmung jeweils in den rohen RR-Intervallen, als auch in der Herzfrequenz und der \ac{HRV}. Gleichzeitig wurde aber auch festgestellt, dass die Apple Watch vermehrt RR-Intervalle nicht identifizieren konnte, was der Autor auf eine Nichterkennung des \ac{PPG}-Pulses zurückführt, was bei nicht richtigem Sitz beziehungsweise vor allem auch viel Bewegung passieren kann. 
+Die Studie ergab nach Synchronisation der Signale und statistischer Auswertung eine serhr gute Übereinstimmung jeweils in den rohen RR-Intervallen, als auch in der Herzfrequenz und der \ac{HRV}. Gleichzeitig wurde aber auch festgestellt, dass die Apple Watch vermehrt RR-Intervalle nicht identifizieren konnte, was der Autor auf eine Nichterkennung des \ac{PPG}-Pulses zurückführt, was bei nicht richtigem Sitz beziehungsweise vor allem auch viel Bewegung passieren kann. 
 
 Dies beeinträchtigt die Messergebnis nicht erwähnenswert, gilt aber im Auge behalten zu werden, da verinzelt fehlende RR-Intervalle insbesondere die \ac{HRV}, welche beispielsweise aus der Standardabweichung der Abstände zwischen RR-Intervallen berechnet werden kann, beeinflussen. \cite{s18082619}
 
-\subsection{Physiologische Marker}
-h
-\section{Theoretischer Rahmen Wearables}
-h
-\subsection{Überblick Wearables}
-h
-\subsection{Verbaute Sensoren für obige physiologische Marker}
-h
-\section{Bisherige Ansätze Stressvorhersage ML}
-h
-\section{Überführung auf Wearable Dataset}
-h
-\section{Diskussion und Implikationen}
-h
+Ähnliche Erkenntnisse bereichten auch B. Bent et al., welche vier Konsumer-Wearables, Apple Watch 4 inkludiert, und zwei Wearables in Forschungsqualität gegen ein \ac{EKG} als Referenzstandard gebenchmarked haben. Dabei wurden dreiunffünfzig Teilnehmer in jeweils drei Runden, umfassend einer Ruhephase im Sitzen, tiefen Atmens, körperlicher Aktivät und einer folgenden Ruhephase, mit Geräten ausgestattet, um pro Teilnehmer eine Messung der Herzfrequenz jedes Wearables zu haben. 
+Sie berichten von einer höheren Genauigkeit der Herzfrequenz der Konsumer-Wearables im Ruhezustand als die der Forschungsgeräte, bestätigen aber Hernandos et al. Vermutung, dass die Messungen bei körperlicher Aktivität niedrigere Qualität aufweisen. \cite{Bent2020}
+
+Bei dieser Studie wurden die Teilnehmer auch extra nach diversen Hautfarbtönen ausgewählt, um zu untersuchen ob die Hautfarbe einen Einfluss auf die Qualität der Herzfrequenzmessung hat, was Aufgrund der Absorbtionsfähigkeit von Melanin eine oft vermutete Limitation von \ac{PPG}-Messungen ist. B. Brent et al. konnten keine Korrelation zwischen dem Hautfarbton und der Messungenauigkeit aufzeigen, was aber kritisch zu betrachten ist, da dies nur bedingt dem Konsens anderer Studien folgt.
+
+Die Genauigkeit von alltäglichen Wearables scheint vielversprechend zu sein, es geilt zu beachten, dass dies während körperlicher asktivität abweichen kann und im Raum steht, dass \ac{PPG} einen Racial-Bias beinhält, welcher physisch bedingt ist, aber nichtsdestotrotz vorallem bei prediktiven medizinischen Verfahren so gut es geht eliminiert werden muss.
+
+\section{Validierung Wesad Dataset}
+
+Um die Erkenntnisse von H. Ernst et al. zu reproduzieren und im anbetracht der obig genannten Limitation, welche sich hauptsächlich auf \ac{PPG} beziehen, möchte ich einen eigenen kleinen empirischen Anteil anhand des WESAD-Datensatzes \cite{Schmidt2018WESAD} beitragen. Es wird versucht aus dem im Datensatz gegebenem \ac{EKG}-Signal die Änderung der Herzfrequenz sowie der Herzratenvariabliltät von der Baseline zum Stresszustand zu errechnen.
+
+\subsection{Begebenheiten des Datensatzes}
+Der Datensatz umfasst physiologische und Bewegungsdaten, die von 17 Teilnehmern (zwei Teilnehmer sind aufgrund von Komplikationen der Sensorik ausgeschieden) während einer Laborsitzung mit einem an der Brust und einem am Handgelenk getragenen Gerät aufgezeichnet wurden. Das an der Brust befestigte Gerät zeichnete ein 3-Elektroden \ac{EKG} mit einer Abtastrate von 700Hz auf, welches genauer untersucht wird.
+
+Die Studie wurde mit einem definierten Protokoll durchgeführt, das darauf abzielte, verschiedene emotionale Zustände zu induzieren:
+
+Baseline-Zustand: Die Teilnehmer ruhten sich aus, während sie neutrales Lesematerial zur Verfügung hatten.
+
+Amusement-Zustand: Die Teilnehmer sahen sich eine Reihe von lustigen Videoclips an.
+
+Stress-Zustand: Dies wurde durch den \ac{TSST} induziert, der öffentliches Sprechen und mentale Arithmetikaufgaben umfasste.
+
+Meditationsperioden: Nach den Stress- und Amusement-Bedingungen führten die Teilnehmer eine geleitete Meditation durch, um sie zu beruhigen.
+
+Ausserdem wurde die Studie multimodal ausgelegt, wobei die Teilnehmer nach dem Durchlauf des Protokolls mehrere Fragebögen zur Selbstevaluierung des Empfindes während des Protokolls
+ausfüllten.
+
+\subsection{Auswertung der EKG-Daten}
+
+Der Datensatz enthält eine Python-Pickle pro Teilnehmer mit den sychronisierten Sensor-Daten sowie den jeweiligen Labels, wobei 0 die Baseline-Messungen und 2 die Stress-Messungen darstellt.
+Es sind noch Labels für 'Amusement' und anderweitige Zustände verfügbar, diese wurden aber nicht berücksichtig.
+
+Weiterhin beinhaltet jeder Teilnehmer-Orderner einer Textdatei, in welcher unter anderem angemerkt wurde, ob ein Teilnehmer beispielsweise vor der Studie raucht, Koffein konsumierte oder Sport bertrieb. Es werden sich nur Teilnehmer angeschaut, welche all diese Anmerkungen mit 'Nein' beantworteten.
+
+Die Pickle Dateien wurde in ein Pandas DataFrame geladen. Darauf wurden pro Teilnehmer Teilsegmente von jeweils 30-Sekunden bestimmt, was bei einer Abtastrate von 700Hz genau 21.000 Datenpunkten entspricht. Segmente welche nicht die Anzahl dieser Datenpunkte erfüllen konnten (die letzten einer Messreihe eines Teilnehmers) wurden nicht beachtet. Das Label welches für ein Segment galt, wurde über ein Mehrheitsvotum der Label der einzelnen Datenpunkte bestimmt. 
+
+Mithilfe des Packages neurokit2, welches speziell für \ac{EKG}-Signale parametriesierte Filter anwendet, wurden pro Segment die R-Peaks bestimmt aus welchen die RR-Intervalle berechnet wurde. Mit diesen konnte pro Segment die Durchschnittliche Herfrequenz sowie die \ac{HRV} mittels \ac{RMSSD} wie folgt:
+
+\[
+\text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N-1} (RR_i - RR_{i+1})^2}
+\]
+
+berechnet werden.
+
+Daraufhin wurden alle Segmente entfernt, welche nicht mit Baseline oder Stress gelabelt wurden und einige Statistische Werte errechnet.
+
+\subsection{Bewertung und Diskussion}
+
+Im Tabelle 1 werden die durschnittliche Herzfrequenz und \ac{HRV} pro Teilnehmer pro Label aufgezeigt, als auch die prozentuale Veränderung von Baseline zu Stress.
+
+Über alle berücksichtigten Teilnehmer veränderte sich die Herzfrequenz um $\mathbf{28.874\% \pm 17.287}$ und die HRV\textsubscript{RMSSD} um $\mathbf{-46.676\% \pm 22.230}$.
+
+    \begin{table}[hp]
+        \begin{tabular}{ccccccc}
+        \rowcolor[HTML]{9B9B9B} 
+        \multicolumn{1}{l}{\cellcolor[HTML]{9B9B9B}}                                      & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Kein Stress}}                                                               & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Stress}}                                                                   & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Delta}}                                                                     \\
+        \rowcolor[HTML]{C0C0C0} 
+        \multicolumn{1}{l}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}\textbf{Teilnehmer}}} & \begin{tabular}[c]{@{}c@{}}HR\_Mean \\   {[}BPM{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Mean\\ {[}ms{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HR\_Mean \\ {[}BPM{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Mean \\ {[}ms{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HR\_Delta \\ {[}\%{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Delta\\  {[}\%{]}\end{tabular} \\ \hline
+        \multicolumn{1}{|c|}{S2}                                                          & \multicolumn{1}{c|}{72.99}                                      & \multicolumn{1}{c|}{96.38}                                   & \multicolumn{1}{c|}{76.91}                                    & \multicolumn{1}{c|}{43.07}                                    & \multicolumn{1}{c|}{5.36}                                     & \multicolumn{1}{c|}{-55.31}                                    \\ \hline
+        \multicolumn{1}{|c|}{S3}                                                          & \multicolumn{1}{c|}{60.99}                                      & \multicolumn{1}{c|}{130.06}                                  & \multicolumn{1}{c|}{86.29}                                    & \multicolumn{1}{c|}{55.63}                                    & \multicolumn{1}{c|}{41.48}                                    & \multicolumn{1}{c|}{-57.23}                                    \\ \hline
+        \multicolumn{1}{|c|}{S4}                                                          & \multicolumn{1}{c|}{64.75}                                      & \multicolumn{1}{c|}{80.48}                                   & \multicolumn{1}{c|}{79.62}                                    & \multicolumn{1}{c|}{42.05}                                    & \multicolumn{1}{c|}{22.96}                                    & \multicolumn{1}{c|}{-47.76}                                    \\ \hline
+        \multicolumn{1}{|c|}{S10}                                                         & \multicolumn{1}{c|}{92.09}                                      & \multicolumn{1}{c|}{33.37}                                   & \multicolumn{1}{c|}{107.13}                                   & \multicolumn{1}{c|}{29.90}                                    & \multicolumn{1}{c|}{16.33}                                    & \multicolumn{1}{c|}{-10.40}                                    \\ \hline
+        \multicolumn{1}{|c|}{S13}                                                         & \multicolumn{1}{c|}{84.92}                                      & \multicolumn{1}{c|}{35.80}                                   & \multicolumn{1}{c|}{108.32}                                   & \multicolumn{1}{c|}{19.30}                                    & \multicolumn{1}{c|}{27.56}                                    & \multicolumn{1}{c|}{-46.08}                                    \\ \hline
+        \multicolumn{1}{|c|}{S14}                                                         & \multicolumn{1}{c|}{88.51}                                      & \multicolumn{1}{c|}{29.21}                                   & \multicolumn{1}{c|}{126.90}                                   & \multicolumn{1}{c|}{11.22}                                    & \multicolumn{1}{c|}{43.36}                                    & \multicolumn{1}{c|}{-61.58}                                    \\ \hline
+        \multicolumn{1}{|c|}{S15}                                                         & \multicolumn{1}{c|}{80.01}                                      & \multicolumn{1}{c|}{46.45}                                   & \multicolumn{1}{c|}{84.94}                                    & \multicolumn{1}{c|}{42.33}                                    & \multicolumn{1}{c|}{6.16}                                     & \multicolumn{1}{c|}{-8.86}                                     \\ \hline
+        \multicolumn{1}{|c|}{S16}                                                         & \multicolumn{1}{c|}{86.99}                                      & \multicolumn{1}{c|}{36.48}                                   & \multicolumn{1}{c|}{128.14}                                   & \multicolumn{1}{c|}{11.21}                                    & \multicolumn{1}{c|}{47.31}                                    & \multicolumn{1}{c|}{-69.26}                                    \\ \hline
+        \multicolumn{1}{|c|}{S17}                                                         & \multicolumn{1}{c|}{75.88}                                      & \multicolumn{1}{c|}{85.89}                                   & \multicolumn{1}{c|}{113.32}                                   & \multicolumn{1}{c|}{31.25}                                    & \multicolumn{1}{c|}{49.33}                                    & \multicolumn{1}{c|}{-18.74}                                    \\ \hline
+    \end{tabular}
+    \caption{Angestrebte CSV-Struktur}
+    \label{tab:Angestrebte CSV-Struktur}
+    \end{table}
+
+    

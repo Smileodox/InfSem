@@ -21,6 +21,13 @@ Apple:
 \newblock \url{https://support.apple.com/en-us/HT204666}, 2023. --
 \newblock Zugriff am 20. April 2024
 
+\bibitem[BGKD20]{Bent2020}
+\textsc{Bent}, Brinnae ; \textsc{Goldstein}, Benjamin~A. ; \textsc{Kibbe}, Warren~A.  ; \textsc{Dunn}, Jessilyn~P.:
+\newblock Investigating sources of inaccuracy in wearable optical heart rate sensors.
+\newblock {In: }\emph{NPJ Digital Medicine} 3 (2020), 18.
+\newblock \url{http://dx.doi.org/10.1038/s41746-020-0226-6}. --
+\newblock DOI 10.1038/s41746--020--0226--6
+
 \bibitem[Boc21]{bocksch2021apple}
 \textsc{Bocksch}, R.:
 \newblock \emph{Apple Watch - mit Abstand Nr. 1}.
@@ -99,6 +106,11 @@ Apple:
 \newblock {In: }\emph{The Lancet} 398 (2021), Nr. 10312, 1700--1712.
 \newblock \url{http://dx.doi.org/10.1016/S0140-6736(21)02143-7}. --
 \newblock DOI 10.1016/S0140--6736(21)02143--7
+
+\bibitem[SRD{\etalchar{+}}18]{Schmidt2018WESAD}
+\textsc{Schmidt}, Philip ; \textsc{Reiss}, Attila ; \textsc{Duerichen}, Robert ; \textsc{Marberger}, Claus  ; \textsc{Laerhoven}, Kristof~V.:
+\newblock Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection.
+\newblock {In: }\emph{Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers}, 2018, 400--408
 
 \bibitem[WLSD08]{Wang2008}
 \textsc{Wang}, Jianli ; \textsc{Lesage}, Alain ; \textsc{Schmitz}, N  ; \textsc{Drapeau}, Aline:
