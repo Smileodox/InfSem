@@ -2029,6 +2029,10 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT ./Arbeit.lof
+INPUT Arbeit.lof
+INPUT Arbeit.lof
+OUTPUT Arbeit.lof
 INPUT ./Arbeit.lot
 INPUT Arbeit.lot
 INPUT Arbeit.lot
@@ -2057,6 +2061,11 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
+INPUT ./Bilder/EKG-Plot.png
+INPUT ./Bilder/EKG-Plot.png
+INPUT Bilder/EKG-Plot.png
+INPUT ./Bilder/EKG-Plot.png
+INPUT ./Bilder/EKG-Plot.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf

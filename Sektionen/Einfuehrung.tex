@@ -172,9 +172,19 @@ Es sind noch Labels für 'Amusement' und anderweitige Zustände verfügbar, dies
 
 Weiterhin beinhaltet jeder Teilnehmer-Orderner einer Textdatei, in welcher unter anderem angemerkt wurde, ob ein Teilnehmer beispielsweise vor der Studie raucht, Koffein konsumierte oder Sport bertrieb. Es werden sich nur Teilnehmer angeschaut, welche all diese Anmerkungen mit 'Nein' beantworteten.
 
-Die Pickle Dateien wurde in ein Pandas DataFrame geladen. Darauf wurden pro Teilnehmer Teilsegmente von jeweils 30-Sekunden bestimmt, was bei einer Abtastrate von 700Hz genau 21.000 Datenpunkten entspricht. Segmente welche nicht die Anzahl dieser Datenpunkte erfüllen konnten (die letzten einer Messreihe eines Teilnehmers) wurden nicht beachtet. Das Label welches für ein Segment galt, wurde über ein Mehrheitsvotum der Label der einzelnen Datenpunkte bestimmt. 
+Die Pickle Dateien wurde in ein Pandas DataFrame geladen. Darauf wurden pro Teilnehmer Teilsegmente von jeweils 30-Sekunden bestimmt, was bei einer Abtastrate von 700Hz genau 21.000 Datenpunkten entspricht. Segmente welche nicht die Anzahl dieser Datenpunkte erfüllen konnten (die letzten einer Messreihe eines Teilnehmers) wurden nicht beachtet. 
+Das Label welches für ein Segment galt, wurde über ein Mehrheitsvotum der Label der einzelnen Datenpunkte bestimmt. 
 
-Mithilfe des Packages neurokit2, welches speziell für \ac{EKG}-Signale parametriesierte Filter anwendet, wurden pro Segment die R-Peaks bestimmt aus welchen die RR-Intervalle berechnet wurde. Mit diesen konnte pro Segment die Durchschnittliche Herfrequenz sowie die \ac{HRV} mittels \ac{RMSSD} wie folgt:
+Mithilfe des Packages neurokit2, welches speziell für \ac{EKG}-Signale parametriesierte Filter anwendet, wurden pro Segment die R-Peaks bestimmt aus welchen die RR-Intervalle berechnet wurde. Siehe Abbildung 1.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Bilder/EKG-Plot.png}
+    \caption{Erkannte R-Peaks im 12-Sekunden-Ausschnitt des gefilterten EKG-Signals}
+    \label{fig:ekg-peaks}
+\end{figure}
+
+Mit diesen konnte pro Segment die Durchschnittliche Herfrequenz sowie die \ac{HRV} mittels \ac{RMSSD} wie folgt:
 
 \[
 \text{RMSSD} = \sqrt{\frac{1}{N-1} \sum_{i=1}^{N-1} (RR_i - RR_{i+1})^2}
@@ -182,7 +192,7 @@ Mithilfe des Packages neurokit2, welches speziell für \ac{EKG}-Signale parametr
 
 berechnet werden.
 
-Daraufhin wurden alle Segmente entfernt, welche nicht mit Baseline oder Stress gelabelt wurden und einige Statistische Werte errechnet.
+Daraufhin wurden alle Segmente entfernt, welche nach dem Majority-Voting nicht mit Baseline oder Stress gelabelt wurden.
 
 \subsection{Bewertung und Diskussion}
 
@@ -190,24 +200,39 @@ Im Tabelle 1 werden die durschnittliche Herzfrequenz und \ac{HRV} pro Teilnehmer
 
 Über alle berücksichtigten Teilnehmer veränderte sich die Herzfrequenz um $\mathbf{28.874\% \pm 17.287}$ und die HRV\textsubscript{RMSSD} um $\mathbf{-46.676\% \pm 22.230}$.
 
-    \begin{table}[hp]
-        \begin{tabular}{ccccccc}
-        \rowcolor[HTML]{9B9B9B} 
-        \multicolumn{1}{l}{\cellcolor[HTML]{9B9B9B}}                                      & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Kein Stress}}                                                               & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Stress}}                                                                   & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Delta}}                                                                     \\
-        \rowcolor[HTML]{C0C0C0} 
-        \multicolumn{1}{l}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}\textbf{Teilnehmer}}} & \begin{tabular}[c]{@{}c@{}}HR\_Mean \\   {[}BPM{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Mean\\ {[}ms{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HR\_Mean \\ {[}BPM{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Mean \\ {[}ms{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HR\_Delta \\ {[}\%{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Delta\\  {[}\%{]}\end{tabular} \\ \hline
-        \multicolumn{1}{|c|}{S2}                                                          & \multicolumn{1}{c|}{72.99}                                      & \multicolumn{1}{c|}{96.38}                                   & \multicolumn{1}{c|}{76.91}                                    & \multicolumn{1}{c|}{43.07}                                    & \multicolumn{1}{c|}{5.36}                                     & \multicolumn{1}{c|}{-55.31}                                    \\ \hline
-        \multicolumn{1}{|c|}{S3}                                                          & \multicolumn{1}{c|}{60.99}                                      & \multicolumn{1}{c|}{130.06}                                  & \multicolumn{1}{c|}{86.29}                                    & \multicolumn{1}{c|}{55.63}                                    & \multicolumn{1}{c|}{41.48}                                    & \multicolumn{1}{c|}{-57.23}                                    \\ \hline
-        \multicolumn{1}{|c|}{S4}                                                          & \multicolumn{1}{c|}{64.75}                                      & \multicolumn{1}{c|}{80.48}                                   & \multicolumn{1}{c|}{79.62}                                    & \multicolumn{1}{c|}{42.05}                                    & \multicolumn{1}{c|}{22.96}                                    & \multicolumn{1}{c|}{-47.76}                                    \\ \hline
-        \multicolumn{1}{|c|}{S10}                                                         & \multicolumn{1}{c|}{92.09}                                      & \multicolumn{1}{c|}{33.37}                                   & \multicolumn{1}{c|}{107.13}                                   & \multicolumn{1}{c|}{29.90}                                    & \multicolumn{1}{c|}{16.33}                                    & \multicolumn{1}{c|}{-10.40}                                    \\ \hline
-        \multicolumn{1}{|c|}{S13}                                                         & \multicolumn{1}{c|}{84.92}                                      & \multicolumn{1}{c|}{35.80}                                   & \multicolumn{1}{c|}{108.32}                                   & \multicolumn{1}{c|}{19.30}                                    & \multicolumn{1}{c|}{27.56}                                    & \multicolumn{1}{c|}{-46.08}                                    \\ \hline
-        \multicolumn{1}{|c|}{S14}                                                         & \multicolumn{1}{c|}{88.51}                                      & \multicolumn{1}{c|}{29.21}                                   & \multicolumn{1}{c|}{126.90}                                   & \multicolumn{1}{c|}{11.22}                                    & \multicolumn{1}{c|}{43.36}                                    & \multicolumn{1}{c|}{-61.58}                                    \\ \hline
-        \multicolumn{1}{|c|}{S15}                                                         & \multicolumn{1}{c|}{80.01}                                      & \multicolumn{1}{c|}{46.45}                                   & \multicolumn{1}{c|}{84.94}                                    & \multicolumn{1}{c|}{42.33}                                    & \multicolumn{1}{c|}{6.16}                                     & \multicolumn{1}{c|}{-8.86}                                     \\ \hline
-        \multicolumn{1}{|c|}{S16}                                                         & \multicolumn{1}{c|}{86.99}                                      & \multicolumn{1}{c|}{36.48}                                   & \multicolumn{1}{c|}{128.14}                                   & \multicolumn{1}{c|}{11.21}                                    & \multicolumn{1}{c|}{47.31}                                    & \multicolumn{1}{c|}{-69.26}                                    \\ \hline
-        \multicolumn{1}{|c|}{S17}                                                         & \multicolumn{1}{c|}{75.88}                                      & \multicolumn{1}{c|}{85.89}                                   & \multicolumn{1}{c|}{113.32}                                   & \multicolumn{1}{c|}{31.25}                                    & \multicolumn{1}{c|}{49.33}                                    & \multicolumn{1}{c|}{-18.74}                                    \\ \hline
-    \end{tabular}
-    \caption{Angestrebte CSV-Struktur}
-    \label{tab:Angestrebte CSV-Struktur}
-    \end{table}
+\begin{table}[hp]
+    \begin{tabular}{ccccccc}
+    \rowcolor[HTML]{9B9B9B} 
+    \multicolumn{1}{l}{\cellcolor[HTML]{9B9B9B}}                                      & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Kein Stress}}                                                               & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Stress}}                                                                   & \multicolumn{2}{c}{\cellcolor[HTML]{9B9B9B}\textbf{Delta}}                                                                     \\
+    \rowcolor[HTML]{C0C0C0} 
+    \multicolumn{1}{l}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}\textbf{Teilnehmer}}} & \begin{tabular}[c]{@{}c@{}}HR\_Mean \\   {[}BPM{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Mean\\ {[}ms{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HR\_Mean \\ {[}BPM{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Mean \\ {[}ms{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HR\_Delta \\ {[}\%{]}\end{tabular} & \begin{tabular}[c]{@{}c@{}}HRV\_Delta\\  {[}\%{]}\end{tabular} \\ \hline
+    \multicolumn{1}{|c|}{S2}                                                          & \multicolumn{1}{c|}{72.99}                                      & \multicolumn{1}{c|}{96.38}                                   & \multicolumn{1}{c|}{76.91}                                    & \multicolumn{1}{c|}{43.07}                                    & \multicolumn{1}{c|}{5.36}                                     & \multicolumn{1}{c|}{-55.31}                                    \\ \hline
+    \multicolumn{1}{|c|}{S3}                                                          & \multicolumn{1}{c|}{60.99}                                      & \multicolumn{1}{c|}{130.06}                                  & \multicolumn{1}{c|}{86.29}                                    & \multicolumn{1}{c|}{55.63}                                    & \multicolumn{1}{c|}{41.48}                                    & \multicolumn{1}{c|}{-57.23}                                    \\ \hline
+    \multicolumn{1}{|c|}{S4}                                                          & \multicolumn{1}{c|}{64.75}                                      & \multicolumn{1}{c|}{80.48}                                   & \multicolumn{1}{c|}{79.62}                                    & \multicolumn{1}{c|}{42.05}                                    & \multicolumn{1}{c|}{22.96}                                    & \multicolumn{1}{c|}{-47.76}                                    \\ \hline
+    \multicolumn{1}{|c|}{S10}                                                         & \multicolumn{1}{c|}{92.09}                                      & \multicolumn{1}{c|}{33.37}                                   & \multicolumn{1}{c|}{107.13}                                   & \multicolumn{1}{c|}{29.90}                                    & \multicolumn{1}{c|}{16.33}                                    & \multicolumn{1}{c|}{-10.40}                                    \\ \hline
+    \multicolumn{1}{|c|}{S13}                                                         & \multicolumn{1}{c|}{84.92}                                      & \multicolumn{1}{c|}{35.80}                                   & \multicolumn{1}{c|}{108.32}                                   & \multicolumn{1}{c|}{19.30}                                    & \multicolumn{1}{c|}{27.56}                                    & \multicolumn{1}{c|}{-46.08}                                    \\ \hline
+    \multicolumn{1}{|c|}{S14}                                                         & \multicolumn{1}{c|}{88.51}                                      & \multicolumn{1}{c|}{29.21}                                   & \multicolumn{1}{c|}{126.90}                                   & \multicolumn{1}{c|}{11.22}                                    & \multicolumn{1}{c|}{43.36}                                    & \multicolumn{1}{c|}{-61.58}                                    \\ \hline
+    \multicolumn{1}{|c|}{S15}                                                         & \multicolumn{1}{c|}{80.01}                                      & \multicolumn{1}{c|}{46.45}                                   & \multicolumn{1}{c|}{84.94}                                    & \multicolumn{1}{c|}{42.33}                                    & \multicolumn{1}{c|}{6.16}                                     & \multicolumn{1}{c|}{-8.86}                                     \\ \hline
+    \multicolumn{1}{|c|}{S16}                                                         & \multicolumn{1}{c|}{86.99}                                      & \multicolumn{1}{c|}{36.48}                                   & \multicolumn{1}{c|}{128.14}                                   & \multicolumn{1}{c|}{11.21}                                    & \multicolumn{1}{c|}{47.31}                                    & \multicolumn{1}{c|}{-69.26}                                    \\ \hline
+    \multicolumn{1}{|c|}{S17}                                                         & \multicolumn{1}{c|}{75.88}                                      & \multicolumn{1}{c|}{85.89}                                   & \multicolumn{1}{c|}{113.32}                                   & \multicolumn{1}{c|}{31.25}                                    & \multicolumn{1}{c|}{49.33}                                    & \multicolumn{1}{c|}{-18.74}                                    \\ \hline
+\end{tabular}
+\caption{Ergebnisse WESAD-Exploration}
+\label{tab:wesad_werte}
+\end{table}
+
+Betrachtet man die Ergebnisse aus der Studie von Ernst et al. \cite{Ernst2023} zum Vergleich, liegen dort die Veränderungen der Herzfrequenz von Baseline zu Stress im Durchschnitt bei $\mathbf{8.361\%}$ (herausgerechnet aus den RR\textsubscript{mean} [ms] Angaben) sowie bei 
+$\mathbf{-19\%}$ für die HRV\textsubscript{RMSSD}. Es gibt mehrere Vermutungen, wieso die Veränderungen im Schnitt bei Auswertung des WESAD-Datensatzes präsenter hervortreten. Einerseits ist die geringere gültige Sample-Size zu beachten (WESAD : 9 | Ernst et al. 60), was bei der Betrachtung der 
+von Teilnehmer zu Teilnehmer unterschiedlichen Reaktionen in Tabelle 1 vermutlich der Haupfaktor ist. Weiterhin unterschieden sich die verwendeten standardisierten Test (\ac{TSST}; \ac{MMST}). Insgesamt ist festzuhalten, dass grundsätzlich in Stressreaktionen durch Aktivierung der \ac{HPA-Achse} und erhöhter
+Aktivität des sympathischen Nervensystems eine Reduktion der HRV\textsubscript{RMSSD} und der Herzfrequenz [BPM] zu erwarten ist. Diese Erkenntnis kann genutzt werden, um Klassifizierungsmodelle anhand dieser Features zu trainieren und letztendlich einen Stresszustand zu klassifizieren.
+
+Diese kleine Exkursion hat gezeigt, das grundsätzlich das 30-sekündige \ac{EKG} einer Apple Watch 4 und höher dafür geeignet ist, physiologische Werte aufzuzeichnen, aus denen aussagekräftige Features extrahiert werden können.
+
+In Siirtolas Paper wurde auf genau diesen Datensatz unter anderem ein \ac{RF} Model trainiert, welches bei binärer Stress/nicht-Stress Klassifizierung eine Balanced-Accuracy von 73.2\% bei alleiniger Verwendung der Herzfrequenz als Feature erreichte. \cite{Siirtola2019}
+Ein guter Wert welcher sich sogar im Mittelfeld von State-of-the-Art Lösungen hält. Es gilt aber zu beachten, dass ein personalisierte Model pro Teilnehmer trainiert wurde und der Durchschnitt über alle Balanced-Accuracies gebildet wurde, was methodisch etwas fraglich ist, 
+aber auch die Möglichkeiten für personalisierte Stress-Modelle in den Raum stellt.
+
+
+
+    
 
     

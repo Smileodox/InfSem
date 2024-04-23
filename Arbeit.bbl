@@ -100,6 +100,13 @@ Apple:
 \newblock \url{http://dx.doi.org/10.1038/138032a0}. --
 \newblock DOI 10.1038/138032a0
 
+\bibitem[Sii19]{Siirtola2019}
+\textsc{Siirtola}, Pekka:
+\newblock Continuous stress detection using the sensors of commercial smartwatch.
+\newblock {In: }\emph{Adjunct Proceedings of the 2019 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2019 ACM International Symposium on Wearable Computers}.
+\newblock New York, NY, USA : Association for Computing Machinery, 2019 (UbiComp/ISWC '19 Adjunct). --
+\newblock ISBN 9781450368698, 1198–1201
+
 \bibitem[SMHS{\etalchar{+}}21]{Santomauro2021}
 \textsc{Santomauro}, Damian~F. ; \textsc{Mantilla~Herrera}, Ana~M. ; \textsc{Shadid}, Jamileh ; \textsc{Zheng}, Peng ; \textsc{Ashbaugh}, Charlie ; \textsc{Pigott}, David~M. ; \textsc{Abbafati}, Cristiana ; \textsc{Adolph}, Christopher ; \textsc{Amlag}, Joanne~O. ; \textsc{Aravkin}, Aleksandr~Y.  u.\,a.:
 \newblock Global prevalence and burden of depressive and anxiety disorders in 204 countries and territories in 2020 due to the COVID-19 pandemic.

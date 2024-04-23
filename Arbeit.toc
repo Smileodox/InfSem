@@ -1,18 +1,19 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{Tabellenverzeichnis}{3}{section*.2}%
-\contentsline {section}{\numberline {1}Einführung}{4}{section.1}%
-\contentsline {section}{\numberline {2}Theoretischer Rahmen Stress}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Moderne Interpretation}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Physiologische Marker für Stress}{6}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Wearables}{7}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Technologische Grundlagen Wearables}{7}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Photoplethysmographie}{8}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Elektrokardiogramm}{8}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Weiter relevante Sensorik}{8}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Limitationen von Wearables}{9}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Validierung Wesad Dataset}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Begebenheiten des Datensatzes}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Auswertung der EKG-Daten}{10}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Bewertung und Diskussion}{11}{subsection.4.3}%
-\contentsline {section}{Literaturverzeichnis}{13}{section*.5}%
-\contentsline {section}{Ehrenwörtliche Erklärung}{16}{section*.7}%
+\contentsline {section}{Abbildungsverzeichnis}{3}{section*.2}%
+\contentsline {section}{Tabellenverzeichnis}{4}{section*.4}%
+\contentsline {section}{\numberline {1}Einführung}{5}{section.1}%
+\contentsline {section}{\numberline {2}Theoretischer Rahmen Stress}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Moderne Interpretation}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Physiologische Marker für Stress}{7}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Wearables}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Technologische Grundlagen Wearables}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Photoplethysmographie}{9}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Elektrokardiogramm}{9}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Weiter relevante Sensorik}{9}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Limitationen von Wearables}{10}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Validierung Wesad Dataset}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Begebenheiten des Datensatzes}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Auswertung der EKG-Daten}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Bewertung und Diskussion}{13}{subsection.4.3}%
+\contentsline {section}{Literaturverzeichnis}{15}{section*.7}%
+\contentsline {section}{Ehrenwörtliche Erklärung}{18}{section*.9}%
