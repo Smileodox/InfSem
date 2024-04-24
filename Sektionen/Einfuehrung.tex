@@ -179,7 +179,7 @@ Mithilfe des Packages neurokit2, welches speziell für \ac{EKG}-Signale parametr
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{Bilder/EKG-Plot.png}
+    \includegraphics[width=1\textwidth]{Bilder/EKG-Plot.png}
     \caption{Erkannte R-Peaks im 12-Sekunden-Ausschnitt des gefilterten EKG-Signals}
     \label{fig:ekg-peaks}
 \end{figure}
@@ -228,11 +228,31 @@ Aktivität des sympathischen Nervensystems eine Reduktion der HRV\textsubscript{
 Diese kleine Exkursion hat gezeigt, das grundsätzlich das 30-sekündige \ac{EKG} einer Apple Watch 4 und höher dafür geeignet ist, physiologische Werte aufzuzeichnen, aus denen aussagekräftige Features extrahiert werden können.
 
 In Siirtolas Paper wurde auf genau diesen Datensatz unter anderem ein \ac{RF} Model trainiert, welches bei binärer Stress/nicht-Stress Klassifizierung eine Balanced-Accuracy von 73.2\% bei alleiniger Verwendung der Herzfrequenz als Feature erreichte. \cite{Siirtola2019}
-Ein guter Wert welcher sich sogar im Mittelfeld von State-of-the-Art Lösungen hält. Es gilt aber zu beachten, dass ein personalisierte Model pro Teilnehmer trainiert wurde und der Durchschnitt über alle Balanced-Accuracies gebildet wurde, was methodisch etwas fraglich ist, 
-aber auch die Möglichkeiten für personalisierte Stress-Modelle in den Raum stellt.
+\ac{RF} wird im nächsten Kapitel dieser Arbeit noch genauer vorgestellt. Dies stellt einen guten Wert, welcher sich sogar im Mittelfeld von State-of-the-Art Lösungen aufhält, dar. Es gilt aber zu beachten, dass ein personalisiertes Model pro Teilnehmer trainiert und der Durchschnitt über alle Balanced-Accuracies gebildet wurde, was methodisch etwas fraglich ist, da ein Baseline Herzfrequenz des einen Teilnehmers
+durchaus auch der Stressbereich eines anderen sein könnte, aber auch die Möglichkeiten für personalisierte Stress-Modelle in den Raum stellt.
+
+\section{Maschinelles Lernen zur Klassifizierung von Stress}
+In diesem Abschnitt wird untersucht, welche Algorithmen zur Klassifizierung von Stress anhand physiologischer Marker gemessen durch Wearable Biosensors typerscherweise zum Einsatz kommen. 
+Gideon et al. führten dazu ein ausführliches Literatur-Review durch, aus welchem ich zwei Erkenntnisse hervorbringen möchte. 
+
+Bei Papern welche sich mit maschinellem Lernen zur Klassifizierung von Stress befassen trifft man immer wieder auf die gleichen öffentlichen Datensätze welche als Grundlage dienen, darunter auch der WESAD-Datensatz.
+
+Unter den am häufigst vorkommend und gleichzeitig präzisesten Algorithmen befindet sich \ac{RF}, weshalb dieser im folgendem näher untersucht wird. \cite{VOS2023105026}
+
+\subsection{Random-Forest}
+
+\subsection{Fallstudie RF}
+
+\subsection{Unsupervised}
 
 
+\section{Proposal}
+    Mächte auf Cortisol Detection im Schweiß (State-of-the-Art) aufmerksam machen, dass es sehhhhrrr schwierig ist anhand physiologischer Marker alleine ein generalisiertes Stress Model aufzubauen
 
+     ERGO -> Unsupervised Modelle zum antrainieren personalisierter Modell + Multisensorik + Biosensor
+
+    In dem Abschnitt auch Challanges aufzeigen.
+
+\section{Fazit}
     
-
     

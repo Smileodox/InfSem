@@ -15,5 +15,11 @@
 \contentsline {subsection}{\numberline {4.1}Begebenheiten des Datensatzes}{11}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Auswertung der EKG-Daten}{11}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Bewertung und Diskussion}{13}{subsection.4.3}%
-\contentsline {section}{Literaturverzeichnis}{15}{section*.7}%
-\contentsline {section}{Ehrenwörtliche Erklärung}{18}{section*.9}%
+\contentsline {section}{\numberline {5}Maschinelles Lernen zur Klassifizierung von Stress}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Random-Forest}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Fallstudie RF}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Unsupervised}{15}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Proposal}{15}{section.6}%
+\contentsline {section}{\numberline {7}Fazit}{15}{section.7}%
+\contentsline {section}{Literaturverzeichnis}{16}{section*.7}%
+\contentsline {section}{Ehrenwörtliche Erklärung}{19}{section*.9}%

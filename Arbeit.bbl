@@ -119,6 +119,14 @@ Apple:
 \newblock Introducing WESAD, a Multimodal Dataset for Wearable Stress and Affect Detection.
 \newblock {In: }\emph{Proceedings of the 2018 ACM International Joint Conference and 2018 International Symposium on Pervasive and Ubiquitous Computing and Wearable Computers}, 2018, 400--408
 
+\bibitem[VTSR23]{VOS2023105026}
+\textsc{Vos}, Gideon ; \textsc{Trinh}, Kelly ; \textsc{Sarnyai}, Zoltan  ; \textsc{{Rahimi Azghadi}}, Mostafa:
+\newblock Generalizable machine learning for stress monitoring from wearable devices: A systematic literature review.
+\newblock {In: }\emph{International Journal of Medical Informatics} 173 (2023), 105026.
+\newblock \url{http://dx.doi.org/https://doi.org/10.1016/j.ijmedinf.2023.105026}. --
+\newblock DOI https://doi.org/10.1016/j.ijmedinf.2023.105026. --
+\newblock ISSN 1386--5056
+
 \bibitem[WLSD08]{Wang2008}
 \textsc{Wang}, Jianli ; \textsc{Lesage}, Alain ; \textsc{Schmitz}, N  ; \textsc{Drapeau}, Aline:
 \newblock The relationship between work stress and mental disorders in men and women: Findings from a population-based study.
