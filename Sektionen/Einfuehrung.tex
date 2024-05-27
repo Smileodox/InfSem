@@ -294,8 +294,23 @@ durch eine hohe Baumtiefe zur folge haben kann.
     \caption{Beispielhafte Darstellung Desicion Tree}
 \end{figure}
 
-Hello
+Abbildung 2 stellt dies simplifiziert und beispielhaft da. Weiterhin wird der ID3-Algortihmus, welcher zur Errechnung des Information-Gains durch Entropie
+benutzt wird offen gelassen und es wird auf die Quelle für diesen Abschnitt, ein grundlegendes Paper von J. Ross Quinlan, verwiesen. \cite{Quinlan1986}
 
+Das Random-Forest Verfahren nutzt also diese Decision Trees und wendet weitere Techniken an, um deren schwächen zu negieren, diese lauten unter anderem wie folgt:
+
+\begin{itemize}
+    \item \textbf{Bootstrapping}: Aus dem ursprünglichen Datensatz werden durch Ziehen mit Zurücklegen mehrere neue Datensätze (Bootstrap-Samples) erstellt. Jeder dieser neuen Datensätze dient als Trainingsdatensatz für einen der Entscheidungsbäume.
+    
+    \item \textbf{Random Feature Selection}: Bei der Aufspaltung eines Knotens in jedem Entscheidungsbaum wird nicht der gesamte Satz von Features betrachtet, sondern nur eine zufällige Auswahl davon. Dies erhöht die Diversität der Bäume und verhindert, dass einzelne dominante Features alle Bäume gleich beeinflussen.
+    
+    \item \textbf{Training}: Jeder Entscheidungsbaum wird auf seinem jeweiligen Bootstrap-Sample und der zufälligen Auswahl von Features trainiert.
+    
+    \item \textbf{Aggregation}: Nachdem alle Entscheidungsbäume trainiert wurden, werden ihre Vorhersagen kombiniert. Bei Klassifikationsaufgaben wird in der Regel die Mehrheitsabstimmung verwendet, während bei Regressionsaufgaben der Durchschnitt der Vorhersagen genommen wird.
+\end{itemize}
+
+Dadurch erlangt das Verfahren einige Vorteile gegenüber der einzelnen Decision Tree Variante, wie der Resisitenz gegen Overfitting, einer niedrigeren Anfälligkeit für Ausreißer und einer meist
+höheren Präzision als anderen herkömmlichen Klassifikatoren.
 
 \subsection{Fallstudie RF}
 

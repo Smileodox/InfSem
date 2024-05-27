@@ -93,6 +93,14 @@ Apple:
 \newblock {In: }\emph{International journal of neural systems} 27 2 (2017), 1650041.
 \newblock \url{https://api.semanticscholar.org/CorpusID:2934562}
 
+\bibitem[Qui86]{Quinlan1986}
+\textsc{Quinlan}, J.~R.:
+\newblock Induction of Decision Trees.
+\newblock {In: }\emph{Machine Learning} 1 (1986), Nr. 1, 81--106.
+\newblock \url{http://dx.doi.org/10.1007/BF00116251}. --
+\newblock DOI 10.1007/BF00116251. --
+\newblock ISSN 1573--0565
+
 \bibitem[Sel36]{Selye1936}
 \textsc{Selye}, Hans:
 \newblock A Syndrome produced by Diverse Nocuous Agents.

@@ -12,45 +12,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Verzeichnisse/Literaturverzeichnis.bib
 Warning--to sort, need author or key in Apple2023
-You've used 19 entries,
+You've used 20 entries,
             4793 wiz_defined-function locations,
-            1066 strings with 11591 characters,
-and the built_in function-call counts, 16962 in all, are:
-= -- 1829
-> -- 438
-< -- 533
-+ -- 605
-- -- 171
-* -- 1307
-:= -- 2788
-add.period$ -- 36
-call.type$ -- 19
-change.case$ -- 116
-chr.to.int$ -- 19
-cite$ -- 21
-duplicate$ -- 380
-empty$ -- 1113
-format.name$ -- 294
-if$ -- 3323
+            1076 strings with 11742 characters,
+and the built_in function-call counts, 17714 in all, are:
+= -- 1913
+> -- 446
+< -- 543
++ -- 613
+- -- 174
+* -- 1371
+:= -- 2895
+add.period$ -- 38
+call.type$ -- 20
+change.case$ -- 120
+chr.to.int$ -- 20
+cite$ -- 22
+duplicate$ -- 401
+empty$ -- 1182
+format.name$ -- 300
+if$ -- 3490
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 97
-newline$ -- 144
-num.names$ -- 54
-pop$ -- 140
+missing$ -- 103
+newline$ -- 152
+num.names$ -- 57
+pop$ -- 146
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 160
 quote$ -- 0
-skip$ -- 789
+skip$ -- 811
 stack$ -- 0
-substring$ -- 1737
-swap$ -- 112
-text.length$ -- 85
-text.prefix$ -- 6
+substring$ -- 1838
+swap$ -- 117
+text.length$ -- 89
+text.prefix$ -- 7
 top$ -- 0
-type$ -- 191
+type$ -- 201
 warning$ -- 1
-while$ -- 127
-width$ -- 22
-write$ -- 309
+while$ -- 132
+width$ -- 23
+write$ -- 327
 (There was 1 warning)
