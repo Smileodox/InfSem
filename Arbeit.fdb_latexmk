@@ -1,22 +1,22 @@
 # Fdb version 4
-["bibtex Arbeit"] 1716812806 "Arbeit.aux" "Arbeit.bbl" "Arbeit" 1716813267 0
+["bibtex Arbeit"] 1716814924 "Arbeit.aux" "Arbeit.bbl" "Arbeit" 1716814947 0
   "./Verzeichnisse/Literaturverzeichnis.bib" 1716810615 13179 3cc7ea16819ed6b4c79212fb4e3c0a9d ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/din1505/alphadin.bst" 1199804912 55981 bb3d488c43a074e2c361fac27856c205 ""
-  "Arbeit.aux" 1716813267 2340 a270d1bac0d06db7404a01d3c17de324 "pdflatex"
-  "Sektionen/Einfuehrung.aux" 1716813267 5699 5d4d1a7198e0e409c9526903b9409548 "pdflatex"
-  "framework/Declaration_of_Honor.aux" 1716813267 1494 cdd6cfa38e8b4c70537207f6f66f4835 "pdflatex"
-  "framework/Header.aux" 1716813266 1477 d9fb4ef7b484a5fd6938cb7fc66dbb8e "pdflatex"
+  "Arbeit.aux" 1716814946 2339 c58d15a6db320ec1b8f0a8c5232665f6 "pdflatex"
+  "Sektionen/Einfuehrung.aux" 1716814946 5709 e3dee9bf937ef1a8928b0a558c170bc6 "pdflatex"
+  "framework/Declaration_of_Honor.aux" 1716814946 1494 cd3ceb849a83b4819d9a3dd52c844ff5 "pdflatex"
+  "framework/Header.aux" 1716814946 1477 d9fb4ef7b484a5fd6938cb7fc66dbb8e "pdflatex"
   (generated)
   "Arbeit.bbl"
   "Arbeit.blg"
   (rewritten before read)
-["makeindex Arbeit.idx"] 1716812804 "Arbeit.idx" "Arbeit.ind" "Arbeit" 1716813267 0
-  "Arbeit.idx" 1716813266 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex Arbeit.idx"] 1716814734 "Arbeit.idx" "Arbeit.ind" "Arbeit" 1716814947 0
+  "Arbeit.idx" 1716814945 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "Arbeit.ilg"
   "Arbeit.ind"
   (rewritten before read)
-["pdflatex"] 1716813264 "/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex" "Arbeit.pdf" "Arbeit" 1716813267 0
+["pdflatex"] 1716814944 "/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex" "Arbeit.pdf" "Arbeit" 1716814947 0
   "/Users/paulkeck/Documents/Uni Coburg/Semester 6/InfSem/InfSem/Arbeit.tex" 1713953901 869 67509a81c84c32a9a765a7cd72a2fb95 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -326,26 +326,26 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1704381723 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1704381659 7883458 846e3b202ed6ea8571272c2e81f7f1a6 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Arbeit.aux" 1716813267 2340 a270d1bac0d06db7404a01d3c17de324 "pdflatex"
-  "Arbeit.bbl" 1716812807 7901 284c97ab02796ab1fb9cd46e07b39a34 "bibtex Arbeit"
-  "Arbeit.ind" 1716812804 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Arbeit.idx"
-  "Arbeit.lof" 1716813267 178 c31da7d200fb7cb941a0c378be1af577 "pdflatex"
-  "Arbeit.lot" 1716813267 400 1c1edcc67586e8d4ea76ae36cd664e46 "pdflatex"
-  "Arbeit.out" 1716813267 3917 10e444176812da6ca0320c7bc890328a "pdflatex"
+  "Arbeit.aux" 1716814946 2339 c58d15a6db320ec1b8f0a8c5232665f6 "pdflatex"
+  "Arbeit.bbl" 1716814924 7901 284c97ab02796ab1fb9cd46e07b39a34 "bibtex Arbeit"
+  "Arbeit.ind" 1716814734 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Arbeit.idx"
+  "Arbeit.lof" 1716814946 295 3b54a7a5e42dd7c34b4239b1f9cfe7b7 "pdflatex"
+  "Arbeit.lot" 1716814946 142 79983f2371f2438d575f3d586ae5beeb "pdflatex"
+  "Arbeit.out" 1716814946 3916 c4c8db25af17a87c7e3c619281af9211 "pdflatex"
   "Arbeit.tex" 1713953901 869 67509a81c84c32a9a765a7cd72a2fb95 ""
-  "Arbeit.toc" 1716813267 2008 d56fd4bb1f7ea637a519778c8270dd3b "pdflatex"
+  "Arbeit.toc" 1716814946 2007 e8d67ee44ab2f61c6e1fa3e6e9d7e226 "pdflatex"
   "Bilder//../Bilder/DT_ex.png" 1716813257 153408 4f8ab14df478ad2bbe915b98f9b82350 ""
   "Bilder/EKG-Plot.png" 1713855123 54718 60df24aead792970f78f65cd061700ff ""
-  "Sektionen/Einfuehrung.aux" 1716813267 5699 5d4d1a7198e0e409c9526903b9409548 "pdflatex"
-  "Sektionen/Einfuehrung.tex" 1716813264 32652 f04cd6e80e901689d818fe64b03ec05d ""
+  "Sektionen/Einfuehrung.aux" 1716814946 5709 e3dee9bf937ef1a8928b0a558c170bc6 "pdflatex"
+  "Sektionen/Einfuehrung.tex" 1716814944 32749 18f90dff95ac40bc4fe5a041be819bf1 ""
   "Verzeichnisse/Abkuerzungsverzeichnis.tex" 1713856498 596 db48bdef8d344d3f07b5e87e2fde5028 ""
   "Verzeichnisse/Glossar.tex" 1711635536 190 54cd5765022a9f22ee6a81dce35b9e33 ""
   "Verzeichnisse/Symbolverzeichnis.tex" 1711635536 90 5383bd6c91b0e244376e7c93403d475d ""
   "Verzeichnisse/Worttrennungen.tex" 1711635536 15 c5b1eab35264049635b66cbf27fdc3d9 ""
-  "framework/Declaration_of_Honor.aux" 1716813267 1494 cdd6cfa38e8b4c70537207f6f66f4835 "pdflatex"
+  "framework/Declaration_of_Honor.aux" 1716814946 1494 cd3ceb849a83b4819d9a3dd52c844ff5 "pdflatex"
   "framework/Declaration_of_Honor.tex" 1711635536 327 89ea9c5281902d764bb0af5b86b515aa ""
   "framework/Environments.tex" 1711635536 4778 6a0f7a9e8c746344f5ebcf08bf5d5fbe ""
-  "framework/Header.aux" 1716813266 1477 d9fb4ef7b484a5fd6938cb7fc66dbb8e "pdflatex"
+  "framework/Header.aux" 1716814946 1477 d9fb4ef7b484a5fd6938cb7fc66dbb8e "pdflatex"
   "framework/Header.tex" 1712931575 424 f67e30ac664e998b3b5d2ac40bfabfd0 ""
   "framework/Logo_HS_Coburg.png" 1711635536 67288 2b1ecc7a0ed143e0a933d76ca42a5c2c ""
   "framework/Packages.tex" 1711635536 4245 2813821b05fdc767400e3edf3f3ba5c9 ""

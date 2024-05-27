@@ -257,13 +257,14 @@ Dies wird wiederholt, bis entweder alle Features aufgebraucht sind, alle Datenpu
 Am Blattknoten eines jeden Astes befindet sich dadurch ein Knoten, welcher einer Ausprägung des Labels entspricht. So baut sich der Baum rekursiv auf, was aber beispiesweise ein mögliches Overfitting
 durch eine hohe Baumtiefe zur folge haben kann.
 
-\begin{table}[h!]
+\begin{figure}[h!]
     \centering
-    \begin{minipage}{0.35\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \small
         \begin{tabular}{|c|c|c|c|}
         \hline
+        \rowcolor[HTML]{C0C0C0}
         Wetter & Luftfeuchtigkeit & Windig & Sport \\ \hline
         sonnig & hoch             & nein   & Nein  \\ \hline
         sonnig & hoch             & ja     & Nein  \\ \hline
@@ -280,17 +281,20 @@ durch eine hohe Baumtiefe zur folge haben kann.
         bewölkt & normal          & nein   & Ja    \\ \hline
         regnerisch & hoch         & ja     & Nein  \\ \hline
         \end{tabular}
-        \caption{Beispieldatensatz für Wetterbedingungen und Sportaktivität}
+        \caption{Beispieldatensatz mit Label = Sport}
         \label{tab:sport}
-    \end{minipage}
-    \hspace{0.2\textwidth}
-    \begin{minipage}{0.35\textwidth}
+    \end{subfigure}
+    \hspace{0.05\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../Bilder/DT_ex.png}
-        \caption{Beispielbild neben der Tabelle}
+        \caption{Beispielbild des resultierenden Decision Trees}
         \label{fig:example}
-    \end{minipage}
-\end{table}
+    \end{subfigure}
+    \caption{Beispielhafte Darstellung Desicion Tree}
+\end{figure}
+
+Hello
 
 
 \subsection{Fallstudie RF}
