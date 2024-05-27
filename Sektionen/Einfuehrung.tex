@@ -241,6 +241,21 @@ Unter den am häufigst vorkommend und gleichzeitig präzisesten Algorithmen befi
 
 \subsection{Random-Forest}
 
+\ac{RF} ist ein Supervised-Learning Ensemble Verfahren, also eine Kombination von mehreren Modellen, in diesem Fall Decision Trees, welches lernen kann gelabelte Daten
+zu klassifizieren. Es wurde 2001 von Leo Breimann in dem Paper 'Random Forrests' erstmalig vorgestellt und hat aufgrund beispielsweise der Resistenz gegen
+Overfitting einen bleibenden Eindruck in der Welt des maschinellen Lernens hinterlassen.
+
+Um dieses Ensemble Verfahren zu verstehen, benötigt es Wissen über die Funktionsweise von Decision Trees, dem grundlegenden Modell. 
+Diese sind an sich bereits ein Modell, welches für Klassifizierungs- oder Regressionsaufgaben genutzt werden kann. Sie funktionieren, in dem sie
+Daten in einer Baumartigen Struktur organisieren, wobei jeder Knoten im Baum eine Entscheidung auf Basis eines Attributes trifft und jeder Ast zu einer möglichen 
+Entscheidung oder einem Endergebnis (dem Blattknoten) führt. Die Aufteilung in Konten und Äste basiert auf folgendem Prinzipien:
+
+Ein Feature wird als Wurzelknoten gewählt, in dem der Information-Gain errechnet wird, einfach ausgedrückt: Welches Feature teilt den Datensatz am besten.
+Es werden pro Ausprägung des gewählten Features weiter Knoten erstellt, und für jeden dieser wiederum das Feature mit dem meisten Information-Gain als nächster Knoten gewählt.
+
+Dies wird wiederholt, bis entweder alle Features aufgebraucht sind, alle Datenpunkte im aktuellem Subset zum gleichen Label gehören oder eine vorgegeben Tiefe erreicht wurde.
+Am Blattknoten eines jeden Astes befindet sich dadurch ein Knoten, welcher einer Ausprägung des Labels entspricht. So baut sich der Baum rekursiv auf.
+
 \subsection{Fallstudie RF}
 
 \subsection{Unsupervised}
