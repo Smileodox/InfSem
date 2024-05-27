@@ -254,7 +254,44 @@ Ein Feature wird als Wurzelknoten gewählt, in dem der Information-Gain errechne
 Es werden pro Ausprägung des gewählten Features weiter Knoten erstellt, und für jeden dieser wiederum das Feature mit dem meisten Information-Gain als nächster Knoten gewählt.
 
 Dies wird wiederholt, bis entweder alle Features aufgebraucht sind, alle Datenpunkte im aktuellem Subset zum gleichen Label gehören oder eine vorgegeben Tiefe erreicht wurde.
-Am Blattknoten eines jeden Astes befindet sich dadurch ein Knoten, welcher einer Ausprägung des Labels entspricht. So baut sich der Baum rekursiv auf.
+Am Blattknoten eines jeden Astes befindet sich dadurch ein Knoten, welcher einer Ausprägung des Labels entspricht. So baut sich der Baum rekursiv auf, was aber beispiesweise ein mögliches Overfitting
+durch eine hohe Baumtiefe zur folge haben kann.
+
+\begin{table}[h!]
+    \centering
+    \begin{minipage}{0.35\textwidth}
+        \centering
+        \small
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        Wetter & Luftfeuchtigkeit & Windig & Sport \\ \hline
+        sonnig & hoch             & nein   & Nein  \\ \hline
+        sonnig & hoch             & ja     & Nein  \\ \hline
+        bewölkt & hoch            & nein   & Ja    \\ \hline
+        regnerisch & hoch         & nein   & Ja    \\ \hline
+        regnerisch & normal       & nein   & Ja    \\ \hline
+        regnerisch & normal       & ja     & Nein  \\ \hline
+        bewölkt & normal          & ja     & Ja    \\ \hline
+        sonnig & hoch             & nein   & Nein  \\ \hline
+        sonnig & normal           & nein   & Ja    \\ \hline
+        regnerisch & normal       & nein   & Ja    \\ \hline
+        sonnig & normal           & ja     & Ja    \\ \hline
+        bewölkt & hoch            & ja     & Ja    \\ \hline
+        bewölkt & normal          & nein   & Ja    \\ \hline
+        regnerisch & hoch         & ja     & Nein  \\ \hline
+        \end{tabular}
+        \caption{Beispieldatensatz für Wetterbedingungen und Sportaktivität}
+        \label{tab:sport}
+    \end{minipage}
+    \hspace{0.2\textwidth}
+    \begin{minipage}{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../Bilder/DT_ex.png}
+        \caption{Beispielbild neben der Tabelle}
+        \label{fig:example}
+    \end{minipage}
+\end{table}
+
 
 \subsection{Fallstudie RF}
 
