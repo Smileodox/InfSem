@@ -11,46 +11,48 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: Verzeichnisse/Literaturverzeichnis.bib
+Warning--entry type for "Kim2024" isn't style-file defined
+--line 315 of file Verzeichnisse/Literaturverzeichnis.bib
 Warning--to sort, need author or key in Apple2023
-You've used 22 entries,
+You've used 24 entries,
             4793 wiz_defined-function locations,
-            1095 strings with 12396 characters,
-and the built_in function-call counts, 20041 in all, are:
-= -- 2167
-> -- 508
-< -- 612
-+ -- 694
-- -- 198
-* -- 1557
-:= -- 3270
-add.period$ -- 43
-call.type$ -- 22
-change.case$ -- 134
-chr.to.int$ -- 22
-cite$ -- 24
-duplicate$ -- 445
-empty$ -- 1337
-format.name$ -- 342
-if$ -- 3945
+            1112 strings with 12982 characters,
+and the built_in function-call counts, 22175 in all, are:
+= -- 2393
+> -- 574
+< -- 697
++ -- 794
+- -- 227
+* -- 1723
+:= -- 3630
+add.period$ -- 47
+call.type$ -- 24
+change.case$ -- 149
+chr.to.int$ -- 24
+cite$ -- 26
+duplicate$ -- 486
+empty$ -- 1453
+format.name$ -- 386
+if$ -- 4339
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 112
-newline$ -- 168
-num.names$ -- 63
-pop$ -- 163
+missing$ -- 124
+newline$ -- 182
+num.names$ -- 69
+pop$ -- 181
 preamble$ -- 1
-purify$ -- 178
+purify$ -- 197
 quote$ -- 0
-skip$ -- 907
+skip$ -- 1019
 stack$ -- 0
-substring$ -- 2129
-swap$ -- 131
-text.length$ -- 101
+substring$ -- 2332
+swap$ -- 146
+text.length$ -- 112
 text.prefix$ -- 7
 top$ -- 0
-type$ -- 221
+type$ -- 243
 warning$ -- 1
-while$ -- 150
-width$ -- 25
-write$ -- 363
-(There was 1 warning)
+while$ -- 167
+width$ -- 27
+write$ -- 394
+(There were 2 warnings)

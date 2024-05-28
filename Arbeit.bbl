@@ -89,6 +89,13 @@ Apple:
 \newblock DOI 10.3389/fmedt.2022.782756. --
 \newblock ISSN 2673--3129
 
+\bibitem[KHAS24]{Kim2024}
+\textsc{Kim}, Sung~H. ; \textsc{Ha}, Hyunsoo ; \textsc{Ahmadi}, Muhammad  ; \textsc{Shi}, Justin~S.:
+\newblock \emph{Wearable Devices with Perspiration Measurement Capabilities}.
+\newblock \url{https://ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20240050013}.
+\newblock \,Version:\,feb 2024. --
+\newblock Related U.S. Provisional Application No. 63/397,013, filed on Aug. 11, 2022
+
 \bibitem[KJ23]{Kaiser2023}
 \textsc{Kaiser}, Marianne ; \textsc{Jaillardon}, Laetitia:
 \newblock Pathogenesis of the crosstalk between reproductive function and stress in animals-part 1: Hypothalamo-pituitary-adrenal axis, sympatho-adrenomedullary system and kisspeptin.
@@ -116,6 +123,13 @@ Apple:
 \newblock \url{http://dx.doi.org/10.1007/BF00116251}. --
 \newblock DOI 10.1007/BF00116251. --
 \newblock ISSN 1573--0565
+
+\bibitem[SCC{\etalchar{+}}23]{Singh2023}
+\textsc{Singh}, Naveen~K. ; \textsc{Chung}, Saeromi ; \textsc{Chang}, An-Yi ; \textsc{Wang}, Joseph  ; \textsc{Hall}, Drew~A.:
+\newblock A non-invasive wearable stress patch for real-time cortisol monitoring using a pseudoknot-assisted aptamer.
+\newblock {In: }\emph{Biosensors and Bioelectronics} 227 (2023), May, S. 115097.
+\newblock \url{http://dx.doi.org/10.1016/j.bios.2023.115097}. --
+\newblock DOI 10.1016/j.bios.2023.115097
 
 \bibitem[Sel36]{Selye1936}
 \textsc{Selye}, Hans:

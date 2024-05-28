@@ -352,11 +352,32 @@ Das Ergbeniss stützt die mögliche Relevanz solcher Algorithmen für die Stress
 
 
 \section{Proposal}
-    Mächte auf Cortisol Detection im Schweiß (State-of-the-Art) aufmerksam machen, dass es sehhhhrrr schwierig ist anhand physiologischer Marker alleine ein generalisiertes Stress Model aufzubauen
+Betrachtet man die bisher identifizierten Challenges wie etwa die Sorge um Sensorungenauigkeiten bei Bewegung, die schwere Generalisierbarkeit von solchen Modellen, 
+Abstinenz von hochqualitativen, balancierten Datensätzen und bisher keinem Modell auf rein physiologischen Markern jenseits der 90\% Accuracy stellt sich die Frage 
+in welche Richtung man die Forschung fokussieren sollte, um diese zu mitigieren. Während der Literaturrechere kamen einige bisher unerschlossene Zweige, sowie bereits vorgeschlagen, vielversprechende
+abweichende Ansätze auf. 
 
-     ERGO -> Unsupervised Modelle zum antrainieren personalisierter Modell + Multisensorik + Biosensor
+Wie bereits in Sektion 3.1.3 erwähnt, existieren Ansätze wie in Mozos et al. zur supplementären Analyse anderer Sensorik, hier soziometrische. Ein Alltags-Wearable bietet grundlegend auch die 
+Möglichkeit solch andere Merkmale zu erfassen um eventuell die Accuracy von Modellen durch weitere aussagekräftige Features zu erhöhen. Ein interessanter Ansatz, welcher zwar noch nicht mit der bisher in Apple Watches verbauten 
+Sensorik realisiert werden kann, aber, wie folgender im Februar 2024 veröffentlichter Patentantrag Apples \cite{Kim2024} in Aussicht stellt, ist die Messung der Cortisolkonzentration im Schweiß wie in Singh et al. \cite{Singh2023} dargestellt.
 
-    In dem Abschnitt auch Challanges aufzeigen.
+Das von Apple eingereichte Patent stellt zwar nur einen Sensor zur Messung der Schweißmenge und -rate in Aussicht, dennoch stellt eine Forschung in Richtung von Singh et al. eine wichtige Abzweigung da.
+
+Ernst et al. stellten die Ergebnisse ihrer evaluierten physiologischen Marker bereits einer Messung des Cortisollevels im Speichel gegenüber, wobei ein Anstieg auf das Maxima nach etwa 18 Minute nach der Stressinduktion erfolgte. \cite{Ernst2023} 
+Singh et al. suggeriert mit der Aussage, man Messe durch die Veränderung der Cortisolkonzentration nicht nur die nachfolgenden sonder verursachenten Effekte im Gegensatz zur Messung von physiologischen Markern, dass man einen schneller reagierenden Marker untersuche. 
+Dies ist schlüssig mit den bisherigen Darlegungen der modernen Stressinterpretation, wenn auch in Sektion 2.1 die Cortisolausschüttung der \ac{HPA-Achse} bereits als 'langsamer' betitelt wurde, was die 18 Minuten von Ernst et al. stützt, aber eine Beobachtung der direkt induzierten Veränderung einem Laien dennoch sinnig vorkommt.
+
+Kurzgefasst wurde ein neuartiges Wearable-Patch entworfen, welches sehr präzise die Cortisolkonzentration im Schweiß messen kann. Mit Verweiß auf \cite{Singh2023} zur Veranschauligung der konkreten Funktionsweise, weißt dies jedoch auch einige Challanges auf, 
+wie der Notwendigkeit diese Sensoren nach einer gewissen Periode mithilfe einer Lösung auszuspülen um sie zu reaktivieren.
+
+Zieht man noch den Schmerzpunkt des mangels an gelabelten Daten, sowie die von Siirtola et al. benutzten personalisierten Modelle, wird folgender Forschungsansatz vorgeschlagen:
+
+Die Evaluierung eines Multisensorik-Wearable Systems, welches mithilfe der kontinuierlichen Messung von Herzfrequenz-Features sowie der Cortisolkonzentration im Schweiß durch Unsupervised-Learning Algortihmen personalisierte Modelle pro Probant erstellt.
+
+In diesem Paper wurde ein bestehender Sensor erweiter blablabla
+
+
+
 
 \section{Fazit}
     
