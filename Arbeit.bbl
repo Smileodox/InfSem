@@ -65,6 +65,14 @@ Apple:
 \newblock DOI 10.1080/10253890701288935. --
 \newblock PMID: 17514579
 
+\bibitem[GSDI21]{Prerna2021}
+\textsc{Garg}, Prerna ; \textsc{Santhosh}, Jayasankar ; \textsc{Dengel}, Andreas  ; \textsc{Ishimaru}, Shoya:
+\newblock Stress Detection by Machine Learning and Wearable Sensors.
+\newblock   (2021), 43–45.
+\newblock \url{http://dx.doi.org/10.1145/3397482.3450732}. --
+\newblock DOI 10.1145/3397482.3450732.
+\newblock ISBN 9781450380188
+
 \bibitem[HRS{\etalchar{+}}18]{s18082619}
 \textsc{Hernando}, David ; \textsc{Roca}, Surya ; \textsc{Sancho}, Jorge ; \textsc{Alesanco}, Álvaro  ; \textsc{Bailón}, Raquel:
 \newblock Validation of the Apple Watch for Heart Rate Variability Measurements during Relax and Mental Stress in Healthy Subjects.
@@ -72,6 +80,14 @@ Apple:
 \newblock \url{http://dx.doi.org/10.3390/s18082619}. --
 \newblock DOI 10.3390/s18082619. --
 \newblock ISSN 1424--8220
+
+\bibitem[IEWS22]{Iqbal2022}
+\textsc{Iqbal}, Talha ; \textsc{Elahi}, Adnan ; \textsc{Wijns}, William  ; \textsc{Shahzad}, Atif:
+\newblock Exploring Unsupervised Machine Learning Classification Methods for Physiological Stress Detection.
+\newblock {In: }\emph{Frontiers in Medical Technology} 4 (2022).
+\newblock \url{http://dx.doi.org/10.3389/fmedt.2022.782756}. --
+\newblock DOI 10.3389/fmedt.2022.782756. --
+\newblock ISSN 2673--3129
 
 \bibitem[KJ23]{Kaiser2023}
 \textsc{Kaiser}, Marianne ; \textsc{Jaillardon}, Laetitia:

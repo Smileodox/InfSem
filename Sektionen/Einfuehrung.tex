@@ -314,7 +314,41 @@ höheren Präzision als anderen herkömmlichen Klassifikatoren.
 
 \subsection{Fallstudie RF}
 
+Neben Siirtola et al. \cite{Siirtola2019} erzeugt \ac{RF} auch im Paper von Prerna et al. \cite{Prerna2021} die besten Ergebnisse. Es wird in diesem Abschnitt einmal Beispielsweise auf die Methodik dieses Papers eingegangen.
+
+Verwandet wurde abermals der WESAD-Datensatz \cite{Schmidt2018WESAD}. Aus diesem wurden nur Sensordaten des RespiBAN für den weitern Verlauf verwendet, ergo unter anderem 
+\ac{EKG}-Signale. 
+
+
+
 \subsection{Unsupervised}
+
+Ein im Vergleich relativ unerforschter Bereich ist die Anwendung von Unsupervised-Learning zur Klassifizierung von Stress, welches aber vorallem im Bezug auf Alltags-Wearables ausdrücklich attraktiv wirkt.
+
+Kurz zusammengefasst stellen Unsupervised-Learning-Algortihmen eine Gruppe der Algorithmen des maschinellen Lernens ad, bei der ohne gelabelte Daten gearbeitet wird, 
+um versteckte Muster oder Strukturen in den Eingabedaten zu entdecken, indem sie Ähnlichkeiten oder Unterschiede zwischen den Datenpunkten identifizieren und diese in Cluster, Assoziationen oder Hauptkomponenten 
+einteilen.
+
+Wie Iqbal et al. im für diesen Abschnitt benutzten Paper \cite{Iqbal2022} bereits schrieb, ist die geringe Verfügbarkeit von hochwertigen gelabelten Datensätzen eine sehr große Herausforderung
+für die Entwicklung der Klassifizierungmodelle. Dies spiegelt sich auch darin wieder, dass man immer auf die gleichen verwerndeten Datensätze stößt. Weiterhin ist die Methodik der Erfassung der Labels, sei es durch Formulare im Nachgang oder durch beispielsweise \ac{TSST}
+ein immernoch recht unentschlossener Punkt, da man immer auf Abweichungen in der Methodik der bereits verfügbaren Datensätze stösst.
+
+Der Gedankengang keine gelabelten Daten zu benötigen, sondern stattdessen auf Unsupervised-Learning zu setzen ist also aufgrund dieses Punkt bereits einer näheren Untersuchung wert. Auf den Bezug zu Alltags-Wearables wird in Sektion 
+7 ausdrücklicher eingegangen.
+
+Diesen Vorteilen muss man allerdings einem eventuellen Performance-Verlust gegenüber klassischen Supervised-Learning Modellen 
+entgegenstellen, was durch Iqbal et al. untersucht wurde.
+
+Dieser zog zwei bereits erwähnte öffentlich verfügbare Datensätze heran (SWELL-KW \& Stress Recognition in Automobile Drivers) welche beide mehrere physiologische Marker beinhalten und gelabelt wurden.
+Es wurden für je Kategorie Unsupervised-/Supervised-Learning sieben Algortihmen trainiert und evaluiert, je mit Angabe der Hyperparameter. Es wurde jeweils auf Herzrate und Atmung einzeln und in Kombination trainiert.
+
+Bei der Feature auswahl ist anzumängeln, dass keine Begründung für die Wahl von nur einens beziehungsweise zweier Features angegeben wurde. Weitergehend ist auch der Prozess des Feature-Engineerings nicht
+nachvollziehbar, es wurde nur erwähnt, dass die Daten von Ausreißern bereinigt wurden, jedoch nicht ob die Rohen \ac{EKG} Signale oder rausgerechnete Features verwendet wurden.
+
+Das Resultat der Auswertung zeigte aber auf, das Unsupervised-Learning Algorithmen durchaus im Schnitt der Accuracy schlechter performten, dies aber nur marginal und durchaus auch Algortihmen dieser Kategorie
+besser performen konnten als einiger des Supervised-Learning.
+
+Das Ergbeniss stützt die mögliche Relevanz solcher Algorithmen für die Stress-Klassifizierung, weshalb in \cite{Iqbal2022} wie auch hier aufgefordert wird, mehr in diese Richtung zu forschen. Dies wird ich auch in der nächsten Sektion widerspiegeln.
 
 
 \section{Proposal}
