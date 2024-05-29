@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.4)  29 MAY 2024 12:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.4)  29 MAY 2024 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1169,18 +1169,18 @@ LaTeX Warning: \include should only be used after \begin{document} on input line
 \glo@main@file=\write5
 \openout5 = `Arbeit.glo'.
 
-Package glossaries Info: Writing glossary file Arbeit.glo on input line 31.
+Package glossaries Info: Writing glossary file Arbeit.glo on input line 30.
 \glo@acronym@file=\write6
 \openout6 = `Arbeit.acn'.
 
-Package glossaries Info: Writing glossary file Arbeit.acn on input line 31.
+Package glossaries Info: Writing glossary file Arbeit.acn on input line 30.
 
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 31.
+LaTeX Warning: \include should only be used after \begin{document} on input line 30.
 
 (./Verzeichnisse/Worttrennungen.tex)
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 31.
+LaTeX Warning: \include should only be used after \begin{document} on input line 30.
 
 (./Verzeichnisse/Abkuerzungsverzeichnis.tex
 \@indexfile=\write7
@@ -1192,14 +1192,14 @@ Writing index file Arbeit.idx
 \@nomenclaturefile=\write8
 \openout8 = `Arbeit.nlo'.
 
-Package nomencl Info: Writing nomenclature file Arbeit.nlo on input line 31.
+Package nomencl Info: Writing nomenclature file Arbeit.nlo on input line 30.
 
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 31.
+LaTeX Warning: \include should only be used after \begin{document} on input line 30.
 
 (./Verzeichnisse/Symbolverzeichnis.tex)
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 31.
+LaTeX Warning: \include should only be used after \begin{document} on input line 30.
 
 (./Verzeichnisse/Glossar.tex) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
@@ -1208,24 +1208,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./Arbeit.aux (./framework/Header.aux) (./Sektionen/Einfuehrung.aux) (./framework/Declaration_of_Honor.aux))
 \openout1 = `Arbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1280,19 +1280,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 31.
-Package microtype Info: Applying patch `item' on input line 31.
-Package microtype Info: Applying patch `toc' on input line 31.
-Package microtype Info: Applying patch `eqnum' on input line 31.
-Package microtype Info: Applying patch `footnote' on input line 31.
-Package microtype Info: Applying patch `verbatim' on input line 31.
+LaTeX Info: Redefining \microtypecontext on input line 30.
+Package microtype Info: Applying patch `item' on input line 30.
+Package microtype Info: Applying patch `toc' on input line 30.
+Package microtype Info: Applying patch `eqnum' on input line 30.
+Package microtype Info: Applying patch `footnote' on input line 30.
+Package microtype Info: Applying patch `verbatim' on input line 30.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 31.
+LaTeX Info: Redefining \showhyphens on input line 30.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1317,8 +1317,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 31.
-Package hyperref Info: Link coloring ON on input line 31.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 30.
+Package hyperref Info: Link coloring ON on input line 30.
  (./Arbeit.out) (./Arbeit.out)
 \@outlinefile=\write9
 \openout9 = `Arbeit.out'.
@@ -1427,39 +1427,42 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 
  (./Sektionen/Einfuehrung.tex [5
 
-] [6] [7]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 90.
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 19.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [8] [9] [10] [11]
+) [6] [7] [8] [9] [10] [11]
 <Bilder/EKG-Plot.png, id=273, 732.0951pt x 393.8715pt>
 File: Bilder/EKG-Plot.png Graphic file (type png)
 <use Bilder/EKG-Plot.png>
-Package pdftex.def Info: Bilder/EKG-Plot.png  used on input line 184.
+Package pdftex.def Info: Bilder/EKG-Plot.png  used on input line 121.
 (pdftex.def)             Requested size: 455.24411pt x 244.93102pt.
- [12 <./Bilder/EKG-Plot.png>]
-Overfull \hbox (7.37643pt too wide) in paragraph at lines 206--221
+ [12]
+Overfull \hbox (7.37643pt too wide) in paragraph at lines 143--158
 [][] 
  []
 
-[13] [14]
+[13 <./Bilder/EKG-Plot.png>] [14]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 190.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 190.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 190.
 
-Overfull \hbox (17.77734pt too wide) in paragraph at lines 267--286
+Overfull \hbox (17.77734pt too wide) in paragraph at lines 190--209
  [][] 
  []
 
-<Bilder//../Bilder/DT_ex.png, id=311, 436.9926pt x 530.9436pt>
+<Bilder//../Bilder/DT_ex.png, id=310, 436.9926pt x 530.9436pt>
 File: Bilder//../Bilder/DT_ex.png Graphic file (type png)
 <use Bilder//../Bilder/DT_ex.png>
-Package pdftex.def Info: Bilder//../Bilder/DT_ex.png  used on input line 292.
+Package pdftex.def Info: Bilder//../Bilder/DT_ex.png  used on input line 215.
 (pdftex.def)             Requested size: 204.85846pt x 248.9035pt.
-[15 <./Bilder//../Bilder/DT_ex.png>] [16] [17] [18] [19]) [20] (./Arbeit.bbl [21
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15] [16 <./Bilder//../Bilder/DT_ex.png>] [17] [18] [19]) [20] (./Arbeit.bbl [21
 
 
 ] [22]) [23]
@@ -1468,7 +1471,7 @@ Package pdftex.def Info: Bilder//../Bilder/DT_ex.png  used on input line 292.
  (./framework/Declaration_of_Honor.tex
 
 pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<framework/_Declaration_of_Honor.pdf, id=401, 597.53635pt x 845.07529pt>
+<framework/_Declaration_of_Honor.pdf, id=400, 597.53635pt x 845.07529pt>
 File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
 <use framework/_Declaration_of_Honor.pdf>
 Package pdftex.def Info: framework/_Declaration_of_Honor.pdf  used on input line 13.
@@ -1486,7 +1489,7 @@ pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclu
 
 
 pdfTeX warning: pdflatex (file ./framework/_Declaration_of_Honor.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<framework/_Declaration_of_Honor.pdf, id=404, page=1, 597.53635pt x 845.07529pt>
+<framework/_Declaration_of_Honor.pdf, id=403, page=1, 597.53635pt x 845.07529pt>
 File: framework/_Declaration_of_Honor.pdf Graphic file (type pdf)
 <use framework/_Declaration_of_Honor.pdf, page 1>
 Package pdftex.def Info: framework/_Declaration_of_Honor.pdf , page1 used on input line 13.
@@ -1517,16 +1520,16 @@ This document will not have a glossary.
 
 (./Arbeit.aux (./framework/Header.aux) (./Sektionen/Einfuehrung.aux) (./framework/Declaration_of_Honor.aux))
 Package rerunfilecheck Info: File `Arbeit.out' has not changed.
-(rerunfilecheck)             Checksum: C4C8DB25AF17A87C7E3C619281AF9211;3916.
+(rerunfilecheck)             Checksum: DEFC80DEB3A1CE6927A2CD93B58699DF;3913.
  ) 
 Here is how much of TeX's memory you used:
- 59712 strings out of 476025
- 1358483 string characters out of 5790018
- 2004972 words of memory out of 5000000
- 78803 multiletter control sequences out of 15000+600000
- 589851 words of font info for 351 fonts, out of 8000000 for 9000
+ 59729 strings out of 476025
+ 1358648 string characters out of 5790018
+ 2004947 words of memory out of 5000000
+ 78805 multiletter control sequences out of 15000+600000
+ 590592 words of font info for 361 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,17n,125p,2352b,1376s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,17n,125p,2352b,1382s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{glo:RF} has been referenced but does not exist, replaced by a fixed one
 
@@ -1557,11 +1560,11 @@ pdfTeX warning (dest): name{glo:HPA-Achse} has been referenced but does not exis
 
 pdfTeX warning (dest): name{glo:HRV} has been referenced but does not exist, replaced by a fixed one
 
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Arbeit.pdf (24 pages, 514724 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Arbeit.pdf (24 pages, 508045 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
+ 486 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
  92 named destinations out of 1000 (max. 500000)
- 77040 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 79088 words of extra memory for PDF output out of 89155 (max. 10000000)
 
