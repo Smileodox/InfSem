@@ -27,8 +27,10 @@ wichtige physiologische Daten zu sammeln, konzentriert sich die Forschung bisher
 die einen kontinuierlichen Zugang zu physiologischen Daten bieten, sind jedoch in der breiten Bevölkerung bereits weit verbreitet und könnten eine 
 Schlüsselrolle bei der Früherkennung und dem Management von Stress spielen.
 
-In dieser Arbeit wird untersucht, wie maschinelles Lernen eingesetzt werden kann, um physiologische Daten aus der in alltäglichen Wearables verbauten Sensorik zur Klassifizierung
-von Stresszuständen zu nutzen. Dazu wird zuerst ein Überblick über die Definitionen von Stress und insbesondere dessen messbare physiologische Auswirkungen....    TOOOODDDDDOOOOO!!!
+In dieser Arbeit wird untersucht, ob alltägliche Wearables im Verbund mit Algorithmen des maschinellen Lernens ein aussreichend akkurate Möglichkeit darstellen, um anhand durch Sensorik 
+gemessener, physiologischer Marker, um Stresszustände in Echtzeit zu klassifizieren. Dazu wird zuerst ein Überblick über die diversen Definitionen von Stress und dessen Auswirkung auf physiologische Kenngrößen sowie 
+die derzeit in alltäglichen Wearables verbaute Sensorik geschaffen. Danach wird ein kurzer empirischer Abschnitt aufgebaut, um die Valididtät der \ac{HRV} als Stressmarker zu unterstreichen.
+Weiterhin werden Ansätze des maschinellen Lernens untersucht um zum Schluss eine Empfehlung über weitere Forschungsansätze zu geben.
 
 \section{Theoretischer Rahmen Stress}
 "The most significant feature of these bodily reactions in pain and in the presence of emotion provoking objects is that they are of the nature of reflexes" \cite{Cannon1915}. 
@@ -374,11 +376,19 @@ Zieht man noch den Schmerzpunkt des mangels an gelabelten Daten, sowie die von S
 
 Die Evaluierung eines Multisensorik-Wearable Systems, welches mithilfe der kontinuierlichen Messung von Herzfrequenz-Features sowie der Cortisolkonzentration im Schweiß durch Unsupervised-Learning Algortihmen personalisierte Modelle pro Probant erstellt.
 
-In diesem Paper wurde ein bestehender Sensor erweiter blablabla
-
-
-
+Dieser Ansatz weißt einige Schwierigkeiten auf, stellt aber eine vielversprechende Alternative zu bisherigen Ansätzen da, welche sich ausschließlich auf physiologische Marker konzentrieren.
+Dem vorher gehend benötigt es einiges an Forschung im Bereich des Unsupervised-Learnings zur Erstellung von Stressklassifizierungs-Modellen, sowie der Verbesserung der kontinuierlichen Cortisolkonzentrazionsmessung. Weiterhin ist unklar, ob Features aus diesen beiden Senoriksystemem supplementär oder konträr auf ein Klassifizierungsmodell wirken würden.
 
 \section{Fazit}
+
+Diese Arbeit hat den aktuellen Stand der Forschung zur Klassifizierung von Stresszuständen anhand von physiologischen Daten, die durch Wearables erfasst werden, untersucht. Stress ist in der modernen Gesellschaft ein allgegenwärtiges Problem, das durch verschiedene Faktoren verstärkt wird und erhebliche Auswirkungen auf die psychische und physische Gesundheit haben kann. Die traditionelle Forschung von Walter B. Cannon und Hans Selye bildet die Grundlage für unser Verständnis der physiologischen Stressreaktionen, während moderne Interpretationen von Wissenschaftlern wie David S. Goldstein diese Konzepte weiterentwickelt haben.
+
+Die Analyse der technologischen Grundlagen von Wearables, insbesondere der Apple Watch, hat gezeigt, dass diese Geräte in der Lage sind, wichtige physiologische Marker wie die Herzfrequenz und die Herzratenvariabilität zu erfassen, die als Indikatoren für Stress dienen können. Die Validierung dieser Daten durch den WESAD-Datensatz hat gezeigt, dass es möglich ist, signifikante Unterschiede zwischen stressigen und stressfreien Zuständen zu erkennen.
+
+In der Untersuchung der Methoden des maschinellen Lernens zur Klassifizierung von Stress wurde festgestellt, dass Random-Forest-Algorithmen besonders effektiv sind, da sie eine hohe Genauigkeit und Robustheit gegenüber Überanpassung bieten. Gleichzeitig wurde auf die potenziellen Vorteile unsupervised learning Algorithmen hingewiesen, insbesondere angesichts der Herausforderungen bei der Beschaffung gelabelter Datensätze.
+
+Ein innovativer Ansatz, der in dieser Arbeit vorgeschlagen wird, ist die Kombination von kontinuierlichen Messungen der Herzfrequenz-Features und der Cortisolkonzentration im Schweiß mithilfe eines multisensorischen Wearable-Systems. Dies könnte die Genauigkeit der Stressklassifizierung weiter verbessern und bietet eine vielversprechende Richtung für zukünftige Forschung.
+
+Zusammenfassend lässt sich sagen, dass die Nutzung von Wearables zur Erkennung und Überwachung von Stresszuständen ein vielversprechendes Feld ist, das durch die Weiterentwicklung von Sensortechnologien und Algorithmen des maschinellen Lernens erheblich profitieren kann. Die vorgeschlagenen Ansätze und Erkenntnisse dieser Arbeit könnten dazu beitragen, effektivere und individuell angepasste Lösungen zur Stressbewältigung zu entwickeln.
     
     
